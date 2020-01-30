@@ -1,0 +1,59 @@
+.banner{
+    width: 100%;
+    height: 700px;
+    background-color: #FFFBED;
+}
+/*以下為story區*/
+/*以下為story區*/
+/*以下為story區*/
+.story{
+    height: 470px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.story>.text{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 500px;
+    height: 470px;
+    background-color: aquamarine;
+}
+.story>.text>img{
+    height: 100px;
+    width: auto;
+}
+.story>.text>h2{
+    font-size: 1.18em;
+    font-weight:500;
+    color: #81552F;
+}
+.white{
+    width: 5%;
+    flex-shrink: 1;
+   
+}
+.story-img{
+    flex-shrink: 0;
+    width: 500px;height: 470px;
+    background-image:url(../images/index/story_pic.jpg);
+    background-repeat:no-repeat;
+}
+/*以下為concept區*/
+/*以下為concept區*/
+/*以下為concept區*/
+.concept{
+    height: 800px;
+    background-color: #FFFBED;
+}
+.ingredient{
+    height: 800px;
+}
+.shopping{
+    height: 500px;
+    background-color: #FFFBED;
+}
