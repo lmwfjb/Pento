@@ -3,6 +3,7 @@
 /*以下為header區*/
 header{
     height: 110px;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +20,6 @@ header .logo img{
 header .nav{
     height: 20px;
     width: 400px;
-    font-size: 1.25em;
 }
 .header-menu{
     display: flex;
@@ -33,7 +33,7 @@ header .nav{
 }
 header .member-cart{
     height: 20px;
-    width: 170px;
+    width: 50px;
     font-size: 1em;
     
     display: flex;
@@ -64,6 +64,7 @@ footer{
 }
 .footer-menu>li{
     padding-bottom: 10px;
+    font-size: 0.9em;
 }
 .footer-line{
     border-right: 1px solid black;
