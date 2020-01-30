@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="login-box">
+        <div class="lb-header">
+            <a href="#" class="active" id="login-box-link">會員登入</a>
+            <a href="#" id="signup-box-link">註冊會員</a>
+        </div>
+        <form class="email-login">
+            <div class="title">會員登入</div>
+            <div class="u-form-group inputblock">
+                <label>信箱：</label>
+                <input type="email"/>
+            </div>
+            <div class="u-form-group inputblock">
+                <label>密碼：</label>
+                <input type="password"/>
+            </div>
+            <div class="u-form-group">
+                <button>立即登入購物</button>
+            </div>
+            <div class="u-form-group">
+                <a href="#" class="forgot-password">忘記密碼</a>
+            </div>
+        </form>
+        <form class="email-signup">
+            <div class="title">註冊會員</div>
+            <div class="u-form-group">
+                <label>&emsp;&emsp;姓名：</label>
+                <input type="text"/>
+            </div>
+            <div class="u-form-group">
+                <label>&emsp;&emsp;信箱：</label>
+                <input type="email"/>
+            </div>
+            <div class="u-form-group">
+                <label>&emsp;&emsp;密碼：</label>
+                <input type="password" placeholder="至少8位" />
+            </div>
+            <div class="u-form-group">
+                <label>確認密碼：</label>
+                <input type="password"/>
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" name="news" value="checked">我同意接收商店資訊與優惠訊息&emsp;&emsp;
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="policy" value="checked" checked>我已閱讀並同意網站條款及隱私政策
+            </div>
+            <div class="u-form-group">
+                <button>立即註冊</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(".email-signup").hide();
+        $("#signup-box-link").click(function () {
+            $(".email-login").fadeOut(100);
+            $(".email-signup").delay(100).fadeIn(100);
+            $("#login-box-link").removeClass("active");
+            $("#signup-box-link").addClass("active");
+        });
+        $("#login-box-link").click(function () {
+            $(".email-login").delay(100).fadeIn(100);;
+            $(".email-signup").fadeOut(100);
+            $("#login-box-link").addClass("active");
+            $("#signup-box-link").removeClass("active");
+        });
+    </script>
+</body>
+
+</html>
