@@ -1,8 +1,10 @@
-.container{
-    max-width: 1140px;
+@media screen and (min-width:768px){
+     .container{
+        max-width: 1140px;
 /*    background-color: #d47c7c;*/
-    margin: auto;
-}
+        margin: auto;
+}}/*container screen min 768 end*/
+
 .banner{
     width: 100%;
     height: 700px;
@@ -11,29 +13,24 @@
 /*以下為story  品牌故事 區*/
 /*以下為story  品牌故事 區*/
 /*以下為story  品牌故事 區*/
+/*375x667*/
 .story{
-    height: 470px;
+    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
-    padding: 100px 0px;
+    flex-wrap: wrap;
+/*    background-color: #298466;*/
 }
 .story>.text{
-    flex-shrink: 0;
+/*    background-color: antiquewhite;*/
+    padding: 0 10px;
+}
+.story>.text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    padding: 0 5px;
-    
+    padding: 20px;
 /*    background-color: aqua;*/
-    
-    width: 500px;
-    height: 470px;
-}
-.story>.text>img{
-    height: 100px;
-    width: auto;
 }
 .story>.text>h2{
     font-size: 1.1em;
@@ -43,13 +40,35 @@
 }
 .story>.text>div>p{
     font-size: 0.9em;
-    line-height: 20px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+}
+.story>.text>img{
+    height: 100px;
+    width: auto;
 }
 .story-img{
-    flex-shrink: 0;
-    width: 500px;height: 470px;
+    width: 100%;
+    height: 470px;
     background-image:url(../images/index/story_pic.jpg);
     background-repeat:no-repeat;
+}
+@media screen and (min-width:768px){
+.story{
+    height: 470px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 100px 0px;
+}
+.story>.text{
+    box-sizing: border-box;
+    width: 550px;
+    height: 470px;
+}
+.story-img{
+    width: 500px;height: 470px;
+}
 }
 /*以下為concept 五大品牌堅持 區*/
 /*以下為concept 五大品牌堅持 區*/
