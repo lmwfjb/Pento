@@ -68,7 +68,7 @@ header .member p,.cart p{
 /*以下為footer區*/
 #footer{
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     width: 100%;
 }
 footer{
