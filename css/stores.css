@@ -1,24 +1,29 @@
 body{
     font-family: "微軟正黑體";
     margin:0;
-    min-width: 505px;
+    min-width: 565px;
 }
-.wrapper{
+.store_wrapper{
     width: 100%;
     background-color: #FFFBED;
 }
-.container{ 
+.store_wrapper>.store_container {
     max-width: 1140px;
     margin: auto;
+    padding: 0px 30px;
+}
+
+.flex_item{
+    display: flex;
 }
 hr.divider {
     border: 0;
     height: 1.5px;
     background: #FFDF6A;
-    position: absolute;
-    margin-top: 80px;
-    width: 100%;
-    
+    margin-top: 78px;
+    flex-basis: 480px;
+    flex-grow: 2;
+    flex-shrink: 2;
 }
 .heading_title>.fas {
     color: #007F4E ;
@@ -30,26 +35,28 @@ hr.divider {
     padding:65px 0px 80px;
     width: 180px;
     background-color: #FFFBED;
-    margin:auto;
-    position: relative;
+    margin: auto;
+    flex-basis: 180px;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
-
 .breadcrumb-item{
+    display: flex;
+    justify-content: flex-start;
     padding-top:59px;
-    padding-left: 0;
+    /* padding: 59px 0px 0px 30px; */
 }
 .breadcrumb-item>li{
-    display: inline-block;
+    /* display: inline-block; */
     padding: 0 3px;
     color:black;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 0.9em;
+    
 }
-
 .breadcrumb-item>li>a{
     list-style-type: none;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 0.9em;
     color:black;
     font-weight: normal;
 }
@@ -61,13 +68,18 @@ hr.divider {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .stores{
     background-color: white;
     box-shadow: 5px 5px 0px rgba(255, 223, 106, 0.3);
     width: 505px;
     height: 230px;
+    border-radius: 10px;
     margin-bottom: 80px;
+    transition: all 0.5s linear;
+    flex-shrink: 1;
+}
+.stores:hover{
+    box-shadow: 5px 5px 0px rgba(150, 120, 10, 0.3);
 }
 .stores .border{
     width: 445px;
@@ -78,6 +90,7 @@ hr.divider {
 }
 .border img{
     height: 180px;
+    border-radius: 3px;
 }
 .description{
     height: 180px;
@@ -103,6 +116,5 @@ hr.divider {
     bottom: 0;
 }
 #footer{
-
-    min-width: 505px;
+    min-width: 565px;
 }

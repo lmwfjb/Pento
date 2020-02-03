@@ -25,7 +25,7 @@ header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-/*    background-color: aqua;*/
+   /* background-color: aqua; */
 }
 header .logo img{
     height:65px;
