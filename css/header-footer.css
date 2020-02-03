@@ -66,16 +66,16 @@ header .member p,.cart p{
 /*以下為content區*/
 /*以下為content區*/
 /*以下為content區*/
-#content {
+/* #content {
     padding-bottom: 230px;
-}
+} */
 
 /*以下為footer區*/
 /*以下為footer區*/
 /*以下為footer區*/
 #footer{
     position: absolute;
-    bottom: 0;
+    /* bottom: 0; */
     width: 100%;
 }
 footer{
