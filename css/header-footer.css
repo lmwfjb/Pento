@@ -200,7 +200,7 @@ footer{
 }
 @media screen and (max-width:768px){
     .footer-left{
-        display: none;
+/*        display: none;*/
         margin-bottom: 20px;
     }
     .footer-menu>li{

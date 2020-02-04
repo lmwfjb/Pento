@@ -9,6 +9,7 @@
     max-width: 500px;
 /*    background-color: aqua;*/
     margin-bottom: 50px;
+    margin: auto;
 }
 .news>p{
     margin:0 0 10px 10px;
