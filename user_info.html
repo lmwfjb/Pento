@@ -7,10 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pento | 會員中心</title>
     <link rel="icon" href="images/LOGO.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="css/css_reset.css">
     <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <link rel="stylesheet" href="css/password.css">
+    <link rel="stylesheet" href="css/user_info.css">
 </head>
 
 <body>
@@ -54,19 +54,50 @@
                     <li><a href="">會員中心</a></li>
                 </ol>
             </section>
-            <div class="main">
-                <div class="forgetpassword">
-                    <p class="title">設定新密碼</p>
-                    <div class="input-mail">
-                        <p>（請輸入至少8位元的新密碼）</p>
-                    </div>
-                    <div class="input-mail">
-                        <p>（確認新密碼）</p>
-                    </div>
-                    <input class="submit-btn" type="submit" value="更改密碼">
+
+            <section class="info-sec">
+                <div class="aside">
+                    <a href="#" class="active" id="user-info-link">個人資訊</a>
+                    <a href="#" id="check-order-link">訂單查詢</a>
                 </div>
-            </div>
-        </div>
+
+                <div id="user-form-id" class="user-form">
+                    <div class="title">個人資訊</div>
+                    <div><label for="name">姓名</label><input type="text" id="name" name="name"></div>
+
+                    <div><label for="email">電子信箱</label><input type="text" id="email" name="email"></div>
+
+                    <div><label for="phone">聯絡電話</label><input type="text" id="phone" name="phone"></div>
+
+                    <div><label for="address">收貨地址</label><input type="text" id="address" name="address"></div>
+
+                    <div class="btn">
+                        <div class="cancel">
+                            <input class="cancel-btn" type="submit" value="取消">
+                        </div>
+
+                        <div class="submit">
+                            <input class="submit-btn" type="submit" value="儲存變更">
+                        </div>
+                    </div>
+                </div> <!-- user-form end-->
+
+                <div id="check-order-id" class="order">
+                    <div class="title">訂單查詢</div>
+                    <div class="order-box">
+                        <div class="number">訂單編號：123456</div>
+                        <div class="date">2020/01/15 12:29</div>
+                        <button class="check-btn"><a href="#">查閱</a></button>
+                    </div>
+                    <div class="order-box">
+                        <div class="number">訂單編號：789012</div>
+                        <div class="date">2020/01/28 15:30</div>
+                        <button class="check-btn"><a href="#">查閱</a></button>
+                    </div>
+                </div><!-- order end-->
+            </section>
+
+        </div> <!-- id_content end-->
 
         <!-- ------- footer ------- -->
         <!-- ------- footer ------- -->
@@ -105,15 +136,23 @@
         </div> <!-- id_footer end-->
 
 
-
         <script src="js/jquery-3.4.1.min.js"></script>
         <script>
 
-            $("button").click(function () {
-                $("button").addClass("deepred");
-
+            $("#check-order-id").hide();
+            $("#check-order-link").click(function () {
+                $("#user-form-id").fadeOut(100);
+                $("#check-order-id").delay(100).fadeIn(100);
+                $("#user-info-link").removeClass("active");
+                $("#check-order-link").addClass("active");
             });
 
+            $("#user-info-link").click(function () {
+                $("#check-order-id").fadeOut(100);
+                $("#user-form-id").delay(100).fadeIn(100);
+                $("#check-order-link").removeClass("active");
+                $("#user-info-link").addClass("active");
+            });
         </script>
 </body>
 
