@@ -1,7 +1,7 @@
 body{
     font-family: "微軟正黑體";
     margin:0;
-    min-width: 565px;
+    min-width: 375px;
 }
 .store_wrapper{
     width: 100%;
@@ -28,7 +28,7 @@ hr.divider {
 .heading_title>.fas {
     color: #007F4E ;
 }
-.far{
+.heading_title>.far{
     color: #007F4E ;
 }
 .heading_title{
@@ -89,8 +89,46 @@ hr.divider {
     height: 180px;
     margin: 25px 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+@media(max-width:565px){
+    .store_list{
+        margin:auto;
+        align-items:center;
+    }
+    .stores{
+        width: 90%;
+        height: 400px;
+        margin:auto;
+        border-radius: 10px;
+        /* margin: 20px 0px */
+        margin-bottom: 30px;
+        /* transition: all 0.5s linear;
+        flex-shrink: 1; */
+    }
+    .stores .border{
+        width: 445px;
+        height: 180px;
+        padding: 25px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin:auto;
+    }
+    .border img{
+        height: 180px;
+        border-radius: 3px;
+        /* margin: auto; */
+    }
+    .description{
+        /* position: relative; */
+        height: 180px;
+        width: 180px;
+        margin-top: 160px;
+    }
+}
+
 .border img{
     height: 180px;
     border-radius: 3px;
