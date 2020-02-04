@@ -3,7 +3,7 @@ body{
   }
 
 .breadcrumb-sec{
-    width: 1140px;
+    max-width: 1140px;
     margin: auto;
     padding: 30px;
 }
@@ -85,7 +85,7 @@ input[type="text"]{
         height: 40px;
         outline: #029f5b;
         border:1px solid rgb(184, 184, 184);
-        border-radius:2px;
+        border-radius: 8px;
         width: 100%;
         box-sizing: border-box;
         margin: .5em 0 2em 0;
@@ -103,7 +103,7 @@ input:focus{
 .cancel-btn, .submit-btn{
     width: 100px;
     font-size: 1rem;
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 10px 0;
     margin: 40px 0 0 10px;
     outline: none;
@@ -111,12 +111,13 @@ input:focus{
 }
 
 .cancel-btn{
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     box-sizing: border-box;
+    color: gray;
 }
 
 .cancel-btn:focus{
-    border: none;
+    border: 1px solid lightgray;
 }
 
 .submit-btn{
@@ -153,7 +154,7 @@ h1{
 .order-box>button{
     width: 60px;
     height: 30px;
-    border-radius: 4px;
+    border-radius: 8px;
     box-sizing: border-box;
     outline: none;
 }
