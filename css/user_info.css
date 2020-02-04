@@ -5,6 +5,7 @@ body{
 .breadcrumb-sec{
     width: 1140px;
     margin: auto;
+    padding: 30px;
 }
 
 .breadcrumb-item>li{
@@ -20,33 +21,37 @@ body{
 }
 
 .info-sec{
-    width: 700px;
-    margin: auto;
-    position: relative;
-    /* background-color: rgb(255, 140, 140); */
-}
-
-.info-container{
-    /* background-color: rgb(209, 70, 70); */
-    height: 580px;
     display: flex;
+    width: 100%;
+    max-width: 700px;
+    height: 580px;
     margin: auto;
 }
 
-.aside{
+.info-sec>.aside{
     width: 33.33%;
     padding: 70px 0 0 30px;
 }
 
-.user-info, .check-order{
-    width: 100px;
-    height: 50px;
-    margin-top: 10px;
-    border-radius: 2px;  
-    font-size: 1rem;
-    letter-spacing: .1em;
-    outline: none;
-}
+
+@media screen and (max-width: 768px){
+    .info-sec{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-sec>.aside{
+        display: flex;
+        width: 66.66%;
+        padding: 0;
+    }
+
+    .info-sec>.aside>a{
+        margin: 0 0;
+        width: 50%;
+    }
+} /* info-sec 768 end */
+
 
 .aside>.active{
     background-color: #FEDC5E;
