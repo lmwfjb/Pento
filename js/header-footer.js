@@ -1,6 +1,6 @@
     //螢幕切換
         $(window).resize(function(){
-            if($(window).outerWidth() >=768){
+            if($(window).outerWidth() >768){
                 $("header>.container>.nav").show();
                 $("header>.container>.member-cart>button").hide();
             }else{
