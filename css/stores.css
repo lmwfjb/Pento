@@ -1,7 +1,7 @@
 body{
     font-family: "微軟正黑體";
     margin:0;
-    min-width: 565px;
+    min-width: 300px;
 }
 .store_wrapper{
     width: 100%;
@@ -12,7 +12,6 @@ body{
     margin: auto;
     padding: 0px 30px;
 }
-
 .flex_item{
     display: flex;
 }
@@ -28,7 +27,7 @@ hr.divider {
 .heading_title>.fas {
     color: #007F4E ;
 }
-.far{
+.heading_title>.far{
     color: #007F4E ;
 }
 .heading_title{
@@ -47,14 +46,11 @@ hr.divider {
     display: flex;
     justify-content: flex-start;
     padding-top:59px;
-    /* padding: 59px 0px 0px 30px; */
 }
 .breadcrumb-item>li{
-    /* display: inline-block; */
     padding: 0 3px;
     color:black;
-    font-size: 0.9em;
-    
+    font-size: 0.9em;  
 }
 .breadcrumb-item>li>a{
     list-style-type: none;
@@ -89,12 +85,69 @@ hr.divider {
     height: 180px;
     margin: 25px 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .border img{
     height: 180px;
     border-radius: 3px;
+    box-sizing: border-box;
 }
+@media(max-width:566px){
+    .store_list{
+        margin:auto;
+        align-items:center;
+        box-sizing: border-box;
+    }
+    .stores{
+        width: 76%;
+        height: 400px;
+        margin:auto;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .stores .border{
+        width: 100%;
+        height: 180px;
+        padding: 25px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin:0 auto;
+    }  
+    .description{
+        height: 180px;
+        width: 180px;
+        margin-top: 160px;
+    }
+}/* end of RWD 566px */
+@media(max-width:400px){
+    .stores{
+        width: 76%;
+        height: 330px;
+        margin:auto;
+        border-radius: 10px;
+        margin-bottom: 30px;
+    }
+    .border img{
+        height: 35%;
+        border-radius: 3px;
+    }
+    .stores .border{
+        width: 100%;
+        height: 180px;
+        padding: 20px 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin:0 auto;
+    }
+    .description{
+        height: 180px;
+        width: 180px;
+        margin-top: -70px;
+    }
+}/* end of RWD 400px */
+
 .description{
     height: 180px;
     width: 180px;
@@ -118,6 +171,6 @@ hr.divider {
     position: absolute;
     bottom: 0;
 }
-#footer{
+/* #footer{
     min-width: 565px;
-}
+} */
