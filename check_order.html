@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="css/css_reset.css">
     <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/user_info.css">
+    <link rel="stylesheet" href="css/check_order.css">
 </head>
 
 <body>
+
     <div id="wrapper">
         <div id="header">
             <header>
@@ -61,43 +62,102 @@
                     <a href="#" id="check-order-link">訂單查詢</a>
                 </div>
 
-                <div id="user-form-id" class="user-form">
-                    <div class="title">個人資訊</div>
-                    <div><label for="name">姓名</label><input type="text" id="name" name="name"></div>
-
-                    <div><label for="email">電子信箱</label><input type="text" id="email" name="email"></div>
-
-                    <div><label for="phone">聯絡電話</label><input type="text" id="phone" name="phone"></div>
-
-                    <div><label for="address">收貨地址</label><input type="text" id="address" name="address"></div>
-
-                    <div class="btn">
-                        <div class="cancel">
-                            <input class="cancel-btn" type="button" value="取消">
+                <div class="detail-box">
+                    <div class="product-info">
+                        <div class="title-box">
+                            <div class="title">商品資料</div>
+                            <div class="price">價格</div>
+                            <div class="qty">數量</div>
                         </div>
 
-                        <div class="submit">
-                            <input class="submit-btn" type="submit" value="儲存變更">
+                        <hr>
+
+                        <div class="content-box">
+                            <div class="product-img"><img src="" alt=""></div>
+                            <div class="describe">《鮮食調理包》鮮蝦番茄鮭魚口味</div>
+                            <div class="price-number">NT$128</div>
+                            <div class="qty-number">2</div>
+                        </div>
+                        <div class="content-box">
+                            <div class="product-img"><img src="" alt=""></div>
+                            <div class="describe">《鮮食調理包-超值組合》</div>
+                            <div class="price-number">NT$666</div>
+                            <div class="qty-number">1</div>
+                        </div>
+                        <div class="content-box">
+                            <div class="product-img"><img src="" alt=""></div>
+                            <div class="describe">《天然手作肉乾》牛肉口味</div>
+                            <div class="price-number">NT$480</div>
+                            <div class="qty-number">3</div>
+                        </div>
+
+                        <hr>
+
+                        <div class="total-box">
+                            <div class="total-word">
+                                <p>小計</p>
+                                <p>運費</p>
+                                <p>總計</p>
+                            </div>
+                            <div class="total-price"></div>
+                            <p>NT.951</p>
+                            <p>NT.160</p>
+                            <p>NT.1111</p>
                         </div>
                     </div>
-                </div> <!-- user-form end-->
 
-                <div id="check-order-id" class="order">
-                    <div class="title">訂單查詢</div>
-                    <div class="order-box">
-                        <div class="number">訂單編號：123456</div>
-                        <div class="date">2020/01/15 12:29</div>
-                        <button class="check-btn"><a href="#">查閱</a></button>
+                    <div class="order-info"></div>
+
+                    <div class="order-detail">
+                        <div class="or-title">
+                            <p>訂單編號</p>
+                            <p>訂單日期</p>
+                            <p>訂單狀態</p>
+                        </div>
+                        <div class="or-status">
+                            <p>202002041229</p>
+                            <p>2020/02/04 12:29</p>
+                            <p>處理中</p>
+                        </div>
                     </div>
-                    <div class="order-box">
-                        <div class="number">訂單編號：789012</div>
-                        <div class="date">2020/01/28 15:30</div>
-                        <button class="check-btn"><a href="#">查閱</a></button>
+                    <div class="customer-info"></div>
+                    <div class="cus-title">
+                        <p>收件人</p>
+                        <p>收件地址</p>
+                        <p>收件人電話</p>
+                        <p>運送方式</p>
+                        <p>備註</p>
                     </div>
-                </div><!-- order end-->
+
+                    <div class="cus-content">
+                        <p>王小華</p>
+                        <p>台北市中正區xxx路xx號</p>
+                        <p>0912345678</p>
+                        <p>白貓低溫宅配</p>
+                        <p>早上到貨，謝謝。</p>
+                    </div>
+
+                    <div class="pay-info"></div>
+                    <div class="pay-title">
+                        <p>付款方式</p>
+                        <p>付款狀態</p>
+                        <p>綠界交易編號</p>
+                    </div>
+
+                    <div class="pay-content">
+                        <p>信用卡（經由綠界）</p>
+                        <p>已付款</p>
+                        <p>1904261846428425</p>
+                    </div>
+
+                    <input type="button" value="回列表">
+
+
+                </div>
+
             </section>
-
         </div> <!-- id_content end-->
+
 
         <div id="footer">
             <footer>
@@ -133,11 +193,11 @@
         </div> <!-- id_footer end-->
     </div> <!-- id_wrapper end-->
 
-    <!--script-->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/header-footer.js"></script>
 
     <script>
+
         $("#check-order-id").hide();
         $("#check-order-link").click(function () {
             $("#user-form-id").fadeOut(100);
