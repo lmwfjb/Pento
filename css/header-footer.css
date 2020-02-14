@@ -11,12 +11,12 @@ html, body{
 /*以下為header區*/
 /*以下為header區*/
 /*以下為header區*/
-
 header{
     height: 110px;
     width: 100%;
     background-color: white;
 /*     background-color: antiquewhite; */
+    box-shadow: 1px 1px 15px rgba(43,43,43,0.15);
 }
 header .container{
     box-sizing: border-box;
