@@ -1,0 +1,222 @@
+
+.store_wrapper>.store_container {
+    padding: 0;
+    padding: 0 15px;
+}
+
+.status{
+    max-width: 150px;
+    widows: 100%;
+/*    background-color: #f5a7a7;*/
+    height: 30px;
+}
+
+.order-box{
+    max-width: 700px;
+    margin: auto;
+}
+
+.status{
+    position: relative;
+    margin: auto;
+/*    display: flex;*/
+/*    background-color: #ef7474;*/
+}
+
+.status-line{
+    border: 0;
+    height: 2px;
+    background: #fedc5e;
+}
+
+.block{
+    position: absolute;
+    top: -45%;
+    background-color: #fedc5e;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+/*    z-index: 1;*/
+}
+
+.block1{
+    
+}
+
+.block2{
+    left: 40%;
+}
+
+.block3{
+    left: 80%;
+}
+
+.title-name {
+    display: none;
+}
+
+.or-line{
+    border: 0;
+    height: 1px;
+    width: 90%;
+    background-color: rgb(255, 242, 199);
+}
+
+.pic-word-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-word-box> .pic {
+    width: 120px;
+    height: 120px;
+    margin-right: 15px;
+}
+
+.pic-word-box> .pic > img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.fir, .sec, .thr{
+    display: flex;
+    width: 100%;
+    height: 150px;
+}
+
+.fir{
+    position: relative;
+}
+
+
+.word{
+    position: relative;
+    width: 60%;
+    line-height: 100%;
+}
+
+
+.pd-title {
+    font-size: .8rem;
+    letter-spacing: .05rem;
+    font-weight: bolder;
+    color: #292929;
+    padding-right: 20px;
+}
+
+.pic-word-box .pd-describe {
+    font-size: .1rem;
+    letter-spacing: .08rem;
+    line-height: 150%;
+    padding: 0 10px;
+    font-weight: 500;
+    color: #5c5c5c;
+}
+
+.two{
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: .03rem;
+    margin: 8px;
+}
+
+
+.qty-input>.less, .qty-input>.more{
+    color: #454545;
+    width: 50px;
+    line-height: 20px;
+    padding: 0 6px;
+    background: none;
+}
+
+.qty-input{
+    margin: 0;
+    border: none;
+	height: 20px;
+    width: 180px;
+    margin-top: 35px;
+}
+
+
+.qty-input div{
+    cursor: pointer;
+	font-family: serif;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	user-select: none;
+	transition: all 150ms ease-out;
+    width: 15%;
+    min-width: 20px;
+}	
+
+input{
+    width: 120px;
+    border: .5px solid #c4c4c4;
+    background: none;
+	font-size: .8rem;
+	text-align: center;
+	outline: none;
+    color: #454545;
+    font-weight: 500;
+}	
+
+.four>i{
+    position: absolute;
+    color: #6d6d6d;
+    top: 1%;
+    left: 90%;
+}
+
+
+
+
+
+
+/*
+@media screen and (min-width: 768px) {
+    .order-box {
+        background-color: rgb(255, 152, 152);
+    }
+
+    .title-name {
+        display: flex;
+        background-color: rgb(181, 253, 181);
+        margin: auto;
+    }
+    
+    .pic-word-box>.pic{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .pic-word-box>.pic>img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .one {
+        width: 40%;
+        text-align: center;
+    }
+
+    .three{
+        width:30%;
+        text-align: center;
+    }
+    
+    .two, .four{
+        width: 15%;
+        text-align: center;
+    }
+
+    .fir, .sec, .thr {
+        display: flex;
+    }
+
+}
+*/
