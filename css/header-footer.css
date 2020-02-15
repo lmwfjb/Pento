@@ -11,6 +11,9 @@ html, body{
 /*以下為header區*/
 /*以下為header區*/
 /*以下為header區*/
+#header{
+    position: relative;
+}
 header{
     height: 110px;
     width: 100%;
