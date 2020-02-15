@@ -59,6 +59,9 @@ hr.divider {
 .breadcrumb-item>.breadcrumb_active>a{
     color:black;
 }
+.breadcrumb-item>.breadcrumb_transparent{
+    color: rgba(192, 192, 192, 0.25);
+}
 .store_list{
     width: 100%;
     margin: 0 auto;

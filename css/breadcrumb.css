@@ -18,6 +18,9 @@
 .breadcrumb-item>.breadcrumb_active>a{
     color:black;
 }
+.breadcrumb-item>.breadcrumb_transparent{
+    color: rgba(192, 192, 192, 0.25);
+}
 .page_title{
     width: 100%;
 }
