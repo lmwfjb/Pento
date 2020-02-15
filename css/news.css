@@ -101,6 +101,7 @@
 }
 @media screen and (max-width:414px){
     .description-area>p{
+        /* height: 60px; */
         height: 100%;
         max-height: 60px;
         -webkit-line-clamp: 3;
@@ -123,5 +124,5 @@
     line-height: 20px;
     border-radius: 5px;
     color:white;
-    background-color: #007F4E;
+    background-color: #81552F;
 }
