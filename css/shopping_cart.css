@@ -4,6 +4,10 @@
     padding: 0 15px;
 }
 
+.word .pd-describe{
+    display: none;
+}
+
 .status{
     position: relative;
     margin: auto;
@@ -267,45 +271,18 @@ input{
 }
 
 
-
-
-
-/* .amount{
-    display: flex;
-    background-color: rgb(253, 141, 141);
-    width: 160px;
-    justify-content: space-between;
-    margin-left: 170px;
-}
-
-.amount>div>p{
-    font-size: .2rem;
-    letter-spacing: .03rem;
-    line-height: 200%;
-}
-
-.amount>div>p>span{
-    font-size: 1.2rem;
-    font-weight: 400;
-    text-align: right;
-}
-
-.buy-btn>input{
-    position: absolute;
-    top: 14%;
-    width: 90px;
-    line-height: 30px;
-    border-radius: 4px;
-} */
-
-
-
-
-
-
-/*
 @media screen and (min-width: 768px) {
+
+    .store_wrapper>.store_container{
+        padding: 0;
+        max-width: 1140px;
+        width: 100%;
+        margin: auto;
+    }
+
     .order-box {
+        max-width: 1140px;
+        width: 90%;
         background-color: rgb(255, 152, 152);
     }
 
@@ -325,24 +302,45 @@ input{
         height: 100%;
     }
 
+    .pic-word-box>.word{
+        display: flex;
+        width: 90%;
+        background-color: rgb(255, 181, 70);
+    }
+
+    .pic-word-box .pd-title{
+        font-size: 1rem;
+    }
+
     .one {
         width: 40%;
         text-align: center;
+        padding-left: 6%;
+        background-color: rgb(134, 123, 228);
     }
 
     .three{
-        width:30%;
         text-align: center;
+        background-color: rgb(133, 241, 236);
     }
     
     .two, .four{
         width: 15%;
         text-align: center;
+        background-color: rgb(231, 241, 133);
+    }
+
+    .four{
+        background-color: rgb(216, 61, 61);
     }
 
     .fir, .sec, .thr {
         display: flex;
     }
 
+    .qty-input{
+        background-color: rgb(141, 241, 157);
+    }
+
 }
-*/
+
