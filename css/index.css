@@ -337,9 +337,27 @@ header{
 }
 .ingredient_bg_l,.ingredient_bg_r{
     display: none;
+    position: relative;
+    height: 100%;
 }
 .ingredient_bg_l img,.ingredient_bg_r img{
+    position: absolute;
     width: 100%;
+}
+
+.ing_bg_l1{
+    top:0px;
+}
+.ing_bg_l2{
+    top: 25%;
+}
+.ing_bg_r1{
+    width: 40%;
+    left: 10%;
+    bottom: 10%;
+}
+.ing_bg_r2{
+    top:50%;
 }
 @media screen and (min-width:768px){
     .ingredient{
