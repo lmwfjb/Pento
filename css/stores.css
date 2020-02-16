@@ -86,7 +86,7 @@ hr.divider {
 
 .stores {
     background-color: white;
-    box-shadow: 5px 5px 5px rgba(255, 223, 106, 0.3);
+    box-shadow: 0px 0px 10px #E0E0E0;
     width: 505px;
     height: 230px;
     border-radius: 10px;
@@ -184,14 +184,14 @@ hr.divider {
 }
 
 .strores_name {
-    font-size: 18px;
+    font-size: 0.8em;
     width: 80px;
-    height: 35px;
+    height: 30px;
     text-align: center;
-    line-height: 35px;
+    line-height: 30px;
     border-radius: 10px;
     color: white;
-    background-color: #007F4E;
+    background-color: #997b61;
     position: absolute;
     bottom: 95px;
 }
@@ -201,6 +201,7 @@ hr.divider {
     line-height: 20px;
     position: absolute;
     bottom: 0;
+    letter-spacing: 1.1px;
 }
 
 
