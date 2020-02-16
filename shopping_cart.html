@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="css/css_reset.css">
     <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/stores.css">
-    <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/products_list.css">
+    <link rel="stylesheet" href="css/breadcrumb.css">
     <link rel="stylesheet" href="css/shopping_cart.css">
 </head>
 
@@ -22,9 +21,11 @@
         <div id="header">
             <header>
                 <div class="container">
-<!--                --------header logo 區------------>
-                    <div class="logo"><a href="index.html"><img src="images/LOGO.svg" alt="pentoLogo"></a></div>
-<!--                --------header nav選單 區------------>
+                    <!--                --------header logo 區------------>
+                    <div class="logo">
+                        <a href="/index.html"><img src="images/LOGO.svg" alt="pentoLogo"></a>
+                    </div>
+                    <!--                --------header nav選單 區------------>
                     <nav class="nav">
                         <ul class="header-menu">
                             <li><a href="news_list.html">最新消息</a></li>
@@ -34,16 +35,20 @@
                             <li><a href="stores.html">門市據點</a></li>
                         </ul>
                     </nav>
-<!--                --------header member-cart會員按鈕區------------>
+                    <!--                --------header member-cart會員按鈕區------------>
                     <div class="member-cart">
-                        <div class="member"><a href="login.html">
+                        <div class="member">
+                            <a href="login.html">
                                 <i class="fa fa-user"></i>
-                            </a></div>
-                        <div class="cart"><a href="shopping_cart.html">
+                            </a>
+                        </div>
+                        <div class="cart">
+                            <a href="shopping_cart.html">
                                 <i class="fas fa-shopping-cart"></i>
-                            </a></div>
+                            </a>
+                        </div>
                         <div class="cart"></div>
-<!--                    --------header 選單縮放 按鈕區------------>
+                        <!--                    --------header 選單縮放 按鈕區------------>
                         <button><i class="fas fa-bars"></i></button>
                     </div>
                 </div>
@@ -52,19 +57,28 @@
         <div class="store_wrapper">
             <div class="store_container">
                 <!--            麵包屑-->
-                <div class="paddingleft_30">
-                    <ol class="breadcrumb-item">
-                        <li><a href="index.html">首頁</a></li>
-                        <li>></li>
-                        <li>購物車</li>
-                    </ol>
-                </div>
+                <!-- <div class="padding_30"> -->
+                <ol class="breadcrumb-item">
+                    <li><a href="index.html">首頁</a></li>
+                    <li class="breadcrumb_transparent">|</li>
+                    <li class="breadcrumb_active"><a href="stores.html">最新消息</a></li>
+                </ol>
+                <!-- </div> -->
                 <!--            頁面位置-->
-                <div class="flex_item">
-                    <hr class="divider" />
-                    <div class="heading_title"><i class="fas fa-shopping-cart"></i> 購物車</div>
+                <div class="page_title">
+                    <!-- <i class="fas fa-bell"></i> -->
+                    <div class="page_title_container">
+                        <img src="images/ponit.png" alt="">
+                        <div class="heading_title">&nbsp最新消息&nbsp</div>
+                        <img src="images/ponit.png" alt="">
+                    </div>
                     <hr class="divider" />
                 </div>
+                <!-- </div> -->
+
+
+
+
                 <div id="content">
                     <div class="status">
                         <hr class="status-line">
@@ -171,39 +185,42 @@
                     <div class="pay-box">
                         <div class="am-btn-box">
 
-                            <div class="buy-btn">
-                                <a href="products_list.html">&#60; 繼續購物</a>
-                            </div>
-
-                            <div class="vertical"></div>
-
                             <div class="amount">
-                                <div class="up-price">
-                                    <p class="oth-color">小計:</p>
-                                    <p>NT$ <span>1,402</span> </p>
+                                <div class="item-box">
+                                    <div class="item-name">
+                                        <p class="oth-color">小計:</p>
+                                        <p class="oth-color">運費:</p>
+                                        <p>合計:</p>
+                                    </div>
+
+                                    <div class="item-price">
+                                        <p>NT$ <span>1,402</span> </p>
+                                        <p>NT$ <span>100</span></p>
+                                        <p>NT$ <span>1,502</span></p>
+                                    </div>
                                 </div>
-                                <div class="mid-price">
-                                    <p class="oth-color">運費:</p>
-                                    <p>NT$ <span>100</span></p>
+
+                                <div class="bp-btn-box">
+                                    <div class="buy-btn">
+                                        <a href="products_list.html">&#60; 繼續購物</a>
+                                    </div>
+
+                                    <div class="pay-btn">
+                                        <a href="#">下一步 &#62;</a>
+                                    </div>
                                 </div>
-                                <div class="last-price">
-                                    <p>合計:</p>
-                                    <p>NT$ <span>1,502</span></p>
-                                </div>
-                                <div>
-                                    <div class="pay-btn"><a href="shopping_cart_form.html">下一步 &#62;</a></div>
-                                </div>
+
+
                             </div>
 
                         </div>
-
-
 
                     </div>
 
                 </div>
             </div>
         </div>
+        <!-- id_footer -->
         <div id="footer">
             <footer>
                 <div class="footer-container">
@@ -222,22 +239,24 @@
                             <p><span>客服信箱：</span>service@pento.com</p>
                         </div>
                         <div class="footer-icon">
-                                <a href="https://line.me/zh-hant/"><i class="fab fa-line"></i></a>
-                                <a href="https://zh-tw.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                                <a href="https://www.instagram.com/?hl=zh-tw"><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <div class="copyright">
-                                <i class="far fa-copyright"></i>
-                                <p>2020 Pento</p>
-                            </div>
+                            <a href="https://line.me/zh-hant/"><i class="fab fa-line"></i></a>
+                            <a href="https://zh-tw.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/?hl=zh-tw"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="copyright">
+                            <i class="far fa-copyright"></i>
+                            <p>2020 Pento</p>
                         </div>
                     </div>
+                </div>
             </footer>
-    </div> <!-- id_footer end -->
-</div>
+        </div>
+        <!-- id_footer end -->
+    </div>
     <!--script-->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/header-footer.js"></script>
+    <script src="js/quantity.js"></script>
 
 </body>
 
