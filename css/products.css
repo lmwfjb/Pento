@@ -1,36 +1,36 @@
-body{
+body {
     background-color: lightyellow;
-    font-family: Arial, Helvetica, sans-serif,"微軟正黑體";
+    font-family: Arial, Helvetica, sans-serif, "微軟正黑體";
 }
 
-.product_container{
+.product_container {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
 }
 
-.preview{
+.preview {
     display: flex;
     border-bottom: 3px solid #fedc5e;
     padding-bottom: 5%;
 }
 
-.preview>.preview_photo{
+.preview>.preview_photo {
     width: 50%;
 }
 
-.preview>.preview_photo>img{
+.preview>.preview_photo>img {
     background-color: white;
     padding: 5px;
     margin: 15px;
     width: 80%;
 }
 
-.preview>.preview_content{
+.preview>.preview_content {
     width: 100%;
 }
 
-.preview_content>.preview_text>.text01{
+.preview_content>.preview_text>.text01 {
     width: 70%;
     display: flex;
     justify-content: space-between;
@@ -38,24 +38,24 @@ body{
     margin-bottom: 5%;
 }
 
-.preview_content>.preview_text>.text02{
+.preview_content>.preview_text>.text02 {
     margin: 15px;
     margin-bottom: 0.5%;
     margin-left: 4%;
 }
 
-.preview_content>.preview_text>.text03{
+.preview_content>.preview_text>.text03 {
     margin: 15px;
     font-weight: bold;
     margin-bottom: 8%;
     margin-left: 4%;
 }
 
-.preview_button{
+.preview_button {
     margin-bottom: 10%;
 }
 
-.product_container>.preview>.preview_content>.preview_button>.purchase_button{
+.product_container>.preview>.preview_content>.preview_button>.purchase_button {
     width: 28%;
     height: 30px;
     font-weight: bold;
@@ -67,52 +67,56 @@ body{
     line-height: 30px;
 }
 
-.product_description{
+.purchase_button a {
+    color: white;
+    display: block;
+}
+
+.product_description {
     background-color: lightyellow;
 }
 
-.product_description>.paragraph{
+.product_description>.paragraph {
     padding: 30px;
 }
 
-.product_description>.paragraph>.product_title{
+.product_description>.paragraph>.product_title {
     display: flex;
     justify-content: space-between;
 }
 
-.product_description>.paragraph>.product_title>.text04{
+.product_description>.paragraph>.product_title>.text04 {
     font-size: 2em;
     font-family: 'Noto Serif TC', serif;
     letter-spacing: 0.1em;
 }
 
-.product_description>.paragraph>.product_title>.footprint{
+.product_description>.paragraph>.product_title>.footprint {
     width: 20%;
-    
 }
 
-.product_description>.paragraph>.text05{
+.product_description>.paragraph>.text05 {
     font-size: 1em;
     letter-spacing: 0.05em;
     font-weight: bold;
 }
 
-.product_description>.product_img{
+.product_description>.product_img {
     width: 80%;
     margin: 0 auto;
 }
 
-.product_description>.product_img>img{
+.product_description>.product_img>img {
     width: 100%;
     /* margin: 0 auto; */
 }
 
-.product_container>.product_return{
+.product_container>.product_return {
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
-.product_container>.product_return>.return_button{
+.product_container>.product_return>.return_button {
     width: 11%;
     height: 30px;
     font-weight: bold;
@@ -123,5 +127,6 @@ body{
     text-align: center;
     line-height: 30px;
 }
+
 
 /* @media screen and(max-width =768px){} */
