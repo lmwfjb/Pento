@@ -75,8 +75,9 @@ header .nav{
 .header-menu>li{
     text-align: center;
 }
-.header-menu>p{
-    border-right: 1px solid black;
+.header-menu>hr{
+    height: 15%;
+    border: 1px solid black;
 }
 @media screen and (max-width:768px){
     .header-menu{
@@ -96,8 +97,28 @@ header .nav{
         color: white;
         line-height: 10vh;
     }
-    .header-menu>p{
-        border-right: none;
+}
+@media screen and (min-width:769px){
+    .header-menu{
+        height:110px;
+        margin-top: -53px;
+        align-items: center;
+    }
+    .header-menu>li{
+        box-sizing: border-box;
+/*        background-color: aqua;*/
+        width: 34%;
+    }
+    .header-menu>li>a{
+        display: block;
+        line-height: 110px;
+    }
+    .header-menu>li:hover{
+        background-color: #fffdf5;
+        border-bottom: 3px solid #fedc5e;
+    }
+    .header-menu>li:hover a{
+        color: #81552f;
     }
 }
 /*--------header member-cart會員按鈕區----------*/

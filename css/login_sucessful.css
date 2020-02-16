@@ -15,9 +15,11 @@
 }
 .login-box p{
     letter-spacing: 1px;
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     margin: 0 0 3% 0;
     color: gray;
+    text-align: center;
+    line-height: 25px;
 }
 .login-box button{
     border: none;
