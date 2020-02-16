@@ -16,12 +16,14 @@
 
 <body>
     <div id="wrapper">
-    <div id="header">
+        <div id="header">
             <header>
                 <div class="container">
-<!--                --------header logo 區------------>
-                    <div class="logo"><a href="index.html"><img src="images/LOGO.svg" alt="pentoLogo"></a></div>
-<!--                --------header nav選單 區------------>
+                    <!--                --------header logo 區------------>
+                    <div class="logo">
+                        <a href="index.html"><img src="images/LOGO.svg" alt="pentoLogo"></a>
+                    </div>
+                    <!--                --------header nav選單 區------------>
                     <nav class="nav">
                         <ul class="header-menu">
                             <li><a href="news_list.html">最新消息</a></li>
@@ -31,21 +33,26 @@
                             <li><a href="stores.html">門市據點</a></li>
                         </ul>
                     </nav>
-<!--                --------header member-cart會員按鈕區------------>
+                    <!--                --------header member-cart會員按鈕區------------>
                     <div class="member-cart">
-                        <div class="member"><a href="login.html">
+                        <div class="member">
+                            <a href="login.html">
                                 <i class="fa fa-user"></i>
-                            </a></div>
-                        <div class="cart"><a href="shopping_cart.html">
+                            </a>
+                        </div>
+                        <div class="cart">
+                            <a href="shopping_cart.html">
                                 <i class="fas fa-shopping-cart"></i>
-                            </a></div>
+                            </a>
+                        </div>
                         <div class="cart"></div>
-<!--                    --------header 選單縮放 按鈕區------------>
+                        <!--                    --------header 選單縮放 按鈕區------------>
                         <button><i class="fas fa-bars"></i></button>
                     </div>
                 </div>
             </header>
         </div>
+<<<<<<< HEAD
     <div class="product_wrapper">
         <div class="product_container">
             <ol class="breadcrumb-item">
@@ -83,103 +90,145 @@
                             </ul>
                         </li>
                     </ul>
+=======
+        <div class="product_wrapper">
+            <div class="product_container">
+                <ol class="breadcrumb-item">
+                    <li><a href="index.html">首頁</a></li>
+                    <li>|</li>
+                    <li class="breadcrumb_active"><a href="stores.html">所有商品</a></li>
+                </ol>
+                <!-- </div> -->
+                <!--            頁面位置-->
+                <div class="page_title">
+                    <!-- <i class="fas fa-bell"></i> -->
+                    <div class="page_title_container">
+                        <img src="images/ponit.png" alt="">
+                        <div class="heading_title">&nbsp所有商品&nbsp</div>
+                        <img src="images/ponit.png" alt="">
+                    </div>
+                    <hr class="divider" />
+>>>>>>> ee62f0668bdfaf85d324e4f7c79794bf053dfe59
                 </div>
-<!--                商品區塊-->
-                <div class="product_list_block">
-                    <div class="product_area">
-                        <div class="product">
-                            <div class="flex_product">
-                                <div class="image"><img src="images/products/red.jpg" alt=""></div>
-                                <div class="product_title">
-                                    <div class="product_name">《鮮食調理包》<br> &nbsp;&nbsp;鮮蝦番茄鮭魚口味</div>
-                                    <div class="product_price">NT$ 666</div>
-                                </div>
-                                <div class="product_quantity_block">
-                                    <div class="qty-input">
-                                        <div class="less">-</div>
-                                        
-                                        <input type="text" value="1" onkeyup="return ValidateNumber($(this),value)" />
-                                        <div class="more">+</div>
-                                    </div>
-                                    <div class="add_to_cart"><a href="javascript:void(0);"><i class="fas fa-shopping-cart"></i></a></div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="product">
-                            <div class="flex_product">
-                                <div class="image"><img src="images/products/navyblue.jpg" alt=""></div>
-                                <div class="product_title">
-                                    <div class="product_name">《鮮食調理包》<br>&nbsp;&nbsp;扁鱈風味羔羊口味</div>
-                                    <div class="product_price">NT$ 125</div>
-                                </div>
-
-                                <div class="product_quantity_block">
-                                    <div class="qty-input">
-                                        <div class="less"><i class="fas fa-minus"></i></div>
-                                        
-                                        <input type="text" value="1" onkeyup="return ValidateNumber($(this),value)" />
-                                        <div class="more"><i class="fas fa-plus"></i></div>
-                                    </div>
-                                    <div class="add_to_cart"><a href="javascript:void(0);"><i
-                                                class="fas fa-shopping-cart"></i></a></div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="product">
-                            <div class="flex_product">
-                                <div class="image"><img src="images/products/blue.jpg" alt=""></div>
-                                <div class="product_title">
-                                    <div class="product_name">《鮮食調理包》<br>&nbsp;&nbsp;鮪魚鮮蔬嫩雞口味</div>
-                                    <div class="product_price">NT$ 125</div>
-                                </div>
-
-                                <div class="product_quantity_block">
-                                    <div class="qty-input">
-                                        <div class="less"><i class="fas fa-minus"></i></div>
-                                        
-                                        <input type="text" value="1" onkeyup="return ValidateNumber($(this),value)" />
-                                        <div class="more"><i class="fas fa-plus"></i></div>
-                                    </div>
-                                    <div class="add_to_cart"><a href="javascript:void(0);"><i
-                                                class="fas fa-shopping-cart"></i></a></div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="product">
-                            <div class="flex_product">
-                                <div class="image"><img src="images/products/MEAT_beef.jpg" alt=""></div>
-                                <div class="product_title">
-                                    <div class="product_name">《手作天然肉乾》<br>&nbsp;&nbsp;牛肉口味</div>
-                                    <div class="product_price">NT$ 666</div>
-                                </div>
-
-                                <div class="product_quantity_block">
-                                    <div class="qty-input">
-                                        <div class="less"><i class="fas fa-minus"></i></div>
-                                        
-                                        <input type="text" value="1" onkeyup="return ValidateNumber($(this),value)" />
-                                        <div class="more"><i class="fas fa-plus"></i></div>
-                                    </div>
-                                    <div class="add_to_cart"><a href="javascript:void(0);"><i
-                                                class="fas fa-shopping-cart"></i></a></div>
-                                </div>
-                            </div>
-
-                        </div>
+                <!--            main-->
+                <div class="product_start">
+                    <!--               側邊欄-->
+                    <div class="product_sidemenu_block">
+                        <ul class="product_sidemenu">
+                            <li class="menu_title"><a href="javascript:void(0);">超值組合</a>
+                                <li class="menu_title"><a href="javascript:void(0);">狗狗鮮食</a>
+                                    <ul class="submenu">
+                                        <li><a href="javascript:void(0);">鮮食調理包</a></li>
+                                        <li><a href="javascript:void(0);">手作肉乾&emsp;</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu_title"><a href="javascript:void(0);">貓貓鮮食</a>
+                                    <ul class="submenu">
+                                        <li><a href="javascript:void(0);">鮮食調理包</a></li>
+                                        <li><a href="javascript:void(0);">手作肉乾&emsp;</a></li>
+                                    </ul>
+                                </li>
+                        </ul>
                     </div>
-<!--                    返回扭-->
-                    <div class="button_area">
-                        <a href="products_list.html" class="back_button"><i class="fas fa-long-arrow-alt-left"></i> 返回</a>
-                    </div>
+                    <!--                商品區塊-->
+                    <div class="product_list_block">
+                        <div class="product_area">
+                            <div class="product">
+                                <div class="flex_product">
 
+                                    <div class="image">
+                                        <a href="products.html"><img src="images/products/red.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product_title">
+                                        <div class="product_name">《鮮食調理包》<br> &nbsp;&nbsp;鮮蝦番茄鮭魚口味</div>
+                                        <div class="product_price">NT$ 666</div>
+                                    </div>
+                                    <div class="product_quantity_block">
+                                        <div class="qty-input">
+                                            <div class="less">-</div>
+
+                                            <input type="text" value="1" onkeyup="return ValidateNumber($(this),value)" />
+                                            <div class="more">+</div>
+                                        </div>
+                                        <div class="add_to_cart"><a href="javascript:void(0);"><i class="fas fa-shopping-cart"></i></a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product">
+                                <div class="flex_product">
+                                    <div class="image"><img src="images/products/navyblue.jpg" alt=""></div>
+                                    <div class="product_title">
+                                        <div class="product_name">《鮮食調理包》<br>&nbsp;&nbsp;扁鱈風味羔羊口味</div>
+                                        <div class="product_price">NT$ 125</div>
+                                    </div>
+
+                                    <div class="product_quantity_block">
+                                        <div class="qty-input">
+                                            <div class="less"><i class="fas fa-minus"></i></div>
+
+                                            <input type="text" value="1" onkeyup="return ValidateNumber($(this),value)" />
+                                            <div class="more"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                        <div class="add_to_cart"><a href="javascript:void(0);"><i
+                                                class="fas fa-shopping-cart"></i></a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product">
+                                <div class="flex_product">
+                                    <div class="image"><img src="images/products/blue.jpg" alt=""></div>
+                                    <div class="product_title">
+                                        <div class="product_name">《鮮食調理包》<br>&nbsp;&nbsp;鮪魚鮮蔬嫩雞口味</div>
+                                        <div class="product_price">NT$ 125</div>
+                                    </div>
+
+                                    <div class="product_quantity_block">
+                                        <div class="qty-input">
+                                            <div class="less"><i class="fas fa-minus"></i></div>
+
+                                            <input type="text" value="1" onkeyup="return ValidateNumber($(this),value)" />
+                                            <div class="more"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                        <div class="add_to_cart"><a href="javascript:void(0);"><i
+                                                class="fas fa-shopping-cart"></i></a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="product">
+                                <div class="flex_product">
+                                    <div class="image"><img src="images/products/MEAT_beef.jpg" alt=""></div>
+                                    <div class="product_title">
+                                        <div class="product_name">《手作天然肉乾》<br>&nbsp;&nbsp;牛肉口味</div>
+                                        <div class="product_price">NT$ 666</div>
+                                    </div>
+
+                                    <div class="product_quantity_block">
+                                        <div class="qty-input">
+                                            <div class="less"><i class="fas fa-minus"></i></div>
+
+                                            <input type="text" value="1" onkeyup="return ValidateNumber($(this),value)" />
+                                            <div class="more"><i class="fas fa-plus"></i></div>
+                                        </div>
+                                        <div class="add_to_cart"><a href="javascript:void(0);"><i
+                                                class="fas fa-shopping-cart"></i></a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!--                    返回扭-->
+                        <div class="button_area">
+                            <a href="products_list.html" class="back_button"><i class="fas fa-long-arrow-alt-left"></i> 返回</a>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="footer">
+        <div id="footer">
             <footer>
                 <div class="footer-container">
                     <nav class="footer-left">
@@ -197,46 +246,47 @@
                             <p><span>客服信箱：</span>service@pento.com</p>
                         </div>
                         <div class="footer-icon">
-                                <a href="https://line.me/zh-hant/"><i class="fab fa-line"></i></a>
-                                <a href="https://zh-tw.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                                <a href="https://www.instagram.com/?hl=zh-tw"><i class="fab fa-instagram"></i></a>
-                            </div>
-                            <div class="copyright">
-                                <i class="far fa-copyright"></i>
-                                <p>2020 Pento</p>
-                            </div>
+                            <a href="https://line.me/zh-hant/"><i class="fab fa-line"></i></a>
+                            <a href="https://zh-tw.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/?hl=zh-tw"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <div class="copyright">
+                            <i class="far fa-copyright"></i>
+                            <p>2020 Pento</p>
                         </div>
                     </div>
+                </div>
             </footer>
-    </div> <!-- id_footer end -->
-</div>
+        </div>
+        <!-- id_footer end -->
+    </div>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/header-footer.js"></script>
     <script>
-        $(".product_sidemenu a").click(function (e) {
+        $(".product_sidemenu a").click(function(e) {
             $(".product_sidemenu .submenu").slideUp(), $(this).next().is(":visible") || $(this).next().slideDown(),
                 e.stopPropagation()
         })
 
-        $(".more").click(function () {
-            var input_value =parseInt($(this).parent().children("input").val());
-            if(input_value<20){
+        $(".more").click(function() {
+            var input_value = parseInt($(this).parent().children("input").val());
+            if (input_value < 20) {
                 $(this).parent().children("input").val(input_value + 1);
-            }         
-       });
-        $(".less").click(function () {
-            var input_value =parseInt($(this).parent().children("input").val());
-            if(input_value>1){
+            }
+        });
+        $(".less").click(function() {
+            var input_value = parseInt($(this).parent().children("input").val());
+            if (input_value > 1) {
                 $(this).parent().children("input").val(input_value - 1);
-            }         
-       });
-       
+            }
+        });
 
 
-        
+
+
         // $('.qty-input div').click(function () {
         //     val = parseInt($('.qty-input input').val());
-            
+
 
         //     if ($(this).hasClass('less')) {
         //         val --;
@@ -258,10 +308,9 @@
 
             if (!/^\d+$/.test(pnumber)) {
                 $(e).val(/^\d+/.exec($(e).val()));
-            }else if($('.qty-input input').val()>10) 
-            return false;
+            } else if ($('.qty-input input').val() > 10)
+                return false;
         }
-
     </script>
 </body>
 
