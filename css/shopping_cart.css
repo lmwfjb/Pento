@@ -38,8 +38,8 @@
 .status>.block1{
     left: -7%;
 }
-
-.status>.block2, .status>.block3{
+.status>.block2,
+.status>.block3{
     color: #fedc5e;
     border: 2px solid #fedc5e;
     background-color: #fffbed;
