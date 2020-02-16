@@ -11,6 +11,12 @@ header{
     background-color: transparent;
     box-shadow: none;
 }
+@media screen and (min-width:769px){
+    .header-menu>li:hover{
+        background-color: transparent;
+        border-bottom: none;
+    }
+}
 
 .main{
     margin-top: -90px;

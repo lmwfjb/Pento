@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pento | 會員中心</title>
+    <title>Pento | 會員登入</title>
     <link rel="icon" href="images/LOGO.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="css/css_reset.css">
     <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/user_info.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/login_sucessful.css">
 </head>
 
 <body>
@@ -45,60 +46,12 @@
                 </div>
             </header>
         </div>
-
-        <div id="content">
-            <section class="breadcrumb-sec">
-                <ol class="breadcrumb-item">
-                    <li><a href="">首頁</a></li>
-                    <li>></li>
-                    <li><a href="">會員中心</a></li>
-                </ol>
-            </section>
-
-            <section class="info-sec">
-                <div class="aside">
-                    <a href="#" class="active" id="user-info-link">個人資訊</a>
-                    <a href="#" id="check-order-link">訂單查詢</a>
-                </div>
-
-                <div id="user-form-id" class="user-form">
-                    <div class="title">個人資訊</div>
-                    <div><label for="name">姓名</label><input type="text" id="name" name="name"></div>
-
-                    <div><label for="email">電子信箱</label><input type="text" id="email" name="email"></div>
-
-                    <div><label for="phone">聯絡電話</label><input type="text" id="phone" name="phone"></div>
-
-                    <div><label for="address">收貨地址</label><input type="text" id="address" name="address"></div>
-
-                    <div class="btn">
-                        <div class="cancel">
-                            <input class="cancel-btn" type="button" value="取消">
-                        </div>
-
-                        <div class="submit">
-                            <input class="submit-btn" type="submit" value="儲存變更">
-                        </div>
-                    </div>
-                </div> <!-- user-form end-->
-
-                <div id="check-order-id" class="order">
-                    <div class="title">訂單查詢</div>
-                    <div class="order-box">
-                        <div class="number">訂單編號：123456</div>
-                        <div class="date">2020/01/15 12:29</div>
-                        <button class="check-btn"><a href="#">查閱</a></button>
-                    </div>
-                    <div class="order-box">
-                        <div class="number">訂單編號：789012</div>
-                        <div class="date">2020/01/28 15:30</div>
-                        <button class="check-btn"><a href="#">查閱</a></button>
-                    </div>
-                </div><!-- order end-->
-            </section>
-
-        </div> <!-- id_content end-->
-
+        <div class="login-box">
+           <i class="fas fa-check-circle"></i>
+            <h2>購物完成</h2>
+            <p>我們已收到了您的訂單，<br>您將會收到一封訂單完成通知E-mail，<br>歡迎再次光臨</p>
+            <button><a href="index.html">回首頁</a></button>
+        </div>
         <div id="footer">
             <footer>
                 <div class="footer-container">
@@ -116,7 +69,7 @@
                             <p><span>客服專線：</span>04-1234-5678</p>
                             <p><span>客服信箱：</span>service@pento.com</p>
                         </div>
-                        <div class="footer-icon">
+                       <div class="footer-icon">
                                 <a href="https://line.me/zh-hant/"><i class="fab fa-line"></i></a>
                                 <a href="https://zh-tw.facebook.com/"><i class="fab fa-facebook-square"></i></a>
                                 <a href="https://www.instagram.com/?hl=zh-tw"><i class="fab fa-instagram"></i></a>
@@ -128,28 +81,23 @@
                         </div>
                     </div>
                 </div>
-            </footer>
-        </div> <!-- id_footer end-->
-    </div> <!-- id_wrapper end-->
+    </div>
 
-    <!--script-->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/header-footer.js"></script>
-
     <script>
-        $("#check-order-id").hide();
-        $("#check-order-link").click(function () {
-            $("#user-form-id").fadeOut(100);
-            $("#check-order-id").delay(100).fadeIn(100);
-            $("#user-info-link").removeClass("active");
-            $("#check-order-link").addClass("active");
+        $(".email-signup").hide();
+        $("#signup-box-link").click(function () {
+            $(".email-login").fadeOut(100);
+            $(".email-signup").delay(100).fadeIn(100);
+            $("#login-box-link").removeClass("active");
+            $("#signup-box-link").addClass("active");
         });
-
-        $("#user-info-link").click(function () {
-            $("#check-order-id").fadeOut(100);
-            $("#user-form-id").delay(100).fadeIn(100);
-            $("#check-order-link").removeClass("active");
-            $("#user-info-link").addClass("active");
+        $("#login-box-link").click(function () {
+            $(".email-login").delay(100).fadeIn(100);;
+            $(".email-signup").fadeOut(100);
+            $("#login-box-link").addClass("active");
+            $("#signup-box-link").removeClass("active");
         });
     </script>
 </body>
