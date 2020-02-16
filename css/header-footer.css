@@ -6,6 +6,9 @@ html, body{
     min-height: 100%;
     position: relative;
     min-width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 /*以下為header區*/
