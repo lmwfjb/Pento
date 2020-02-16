@@ -348,7 +348,7 @@ header{
     }
     .ingredient_bg_l,.ingredient_bg_r{
         display: block;
-        width: 20%;
+        width: 23%;
         max-width: 350px;
     }
 }
