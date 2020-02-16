@@ -12,7 +12,7 @@
 .product_start{
     display: flex;
     justify-content: space-between;
-    height: 950px;
+    /* height: 950px; */
 }
 .product_sidemenu_block{
     flex-basis: 19%;
@@ -104,11 +104,11 @@
     background-color: cornsilk;
 }
 
-@media(max-width:620px){
+@media(max-width:505px){
     .product_area .product{
         min-width: 160px;
-        height: 280px;
-        flex-basis: calc(100% / 3 - 30px);
+        height: 200px;
+        flex-basis: 90%;
         margin: 10px;
         margin-bottom: 30px;
         background-color: cornsilk;
