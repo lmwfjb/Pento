@@ -95,7 +95,7 @@ input[type="checkbox"] + label {
     min-width: 100px;
 }
 
-.back-btn>a, input[type="submit"]{
+.back-btn>a, .shopgo{
     display: block;
     font-size: .9rem;
     font-weight: 400;
@@ -156,7 +156,7 @@ input[type="checkbox"] + label {
     outline: none;
 }
 
-.btn-box>input[type="submit"]{
+.shopgo{
     left: 63%;
     min-width: 100px;
     height: 40px;
@@ -164,6 +164,7 @@ input[type="checkbox"] + label {
     color: white;
     text-align: center;
     margin-left: 20px;
+    line-height: 40px;
 }
 
 .btn-box{   
@@ -247,3 +248,5 @@ input[type="checkbox"] + label {
 
 
 }
+
+
