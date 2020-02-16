@@ -315,7 +315,6 @@
 
 .am-btn-box{
     display: flex;
-    /* margin: auto; */
 }
 
 .vertical{
@@ -371,7 +370,6 @@
     letter-spacing: .05rem;
     font-weight: 300;
     padding: 0 30px;
-    /* background-color: rgb(245, 195, 101); */
 }
 
 .up-price, .mid-price, .last-price{
@@ -387,24 +385,14 @@
     color: #b8b8b8;
 }
 
-
-
-
-
 @media screen and (min-width: 768px) {
     
-    .pay-box{
-        /* width: 84%; */
-    }
-
     .buy-btn{
         padding: 0 80px;
         max-width: 200px;
     }
 
     .am-btn-box>.amount{
-        /* background-color: rgb(130, 235, 162); */
-        position: relative;
         max-width: 400px;
     }
 
@@ -413,16 +401,8 @@
         position: absolute;
         right: 20px;
         min-width: 200px;
-        /* padding-left: 180px; */
-
     }
 
-
-    .buy-btn>a, .pay-btn>a{
-         /* width: 120px;   */
-         /* background-color: rgb(211, 83, 83); */
-    } 
-    
     
     
 }

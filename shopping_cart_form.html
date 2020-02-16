@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pento | 購物車</title>
+    <link rel="icon" href="images/LOGO.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/css_reset.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/stores.css">
+    <link rel="stylesheet" href="css/shopping_cart.css">
+    <link rel="stylesheet" href="css/shopping_cart_form.css">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <div id="header">
+            <header>
+                <div class="container">
+                    <!--                --------header logo 區------------>
+                    <div class="logo"><a href="/index.html"><img src="images/LOGO.svg" alt="pentoLogo"></a></div>
+                    <!--                --------header nav選單 區------------>
+                    <nav class="nav">
+                        <ul class="header-menu">
+                            <li><a href="＃">最新消息</a></li>
+                            <p></p>
+                            <li><a href="＃">所有商品</a></li>
+                            <p></p>
+                            <li><a href="＃">門市據點</a></li>
+                        </ul>
+                    </nav>
+                    <!--                --------header member-cart會員按鈕區------------>
+                    <div class="member-cart">
+                        <div class="member"><a href="#">
+                                <i class="fa fa-user"></i>
+                            </a></div>
+                        <div class="cart"><a href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a></div>
+                        <div class="cart"></div>
+                        <!--                    --------header 選單縮放 按鈕區------------>
+                        <button><i class="fas fa-bars"></i></button>
+                    </div>
+                </div>
+            </header>
+        </div> <!-- id_header end-->
+        <div class="store_wrapper">
+            <div class="store_container">
+                <!--            麵包屑-->
+                <div class="paddingleft_30">
+                    <ol class="breadcrumb-item">
+                        <li><a href="index.html">首頁</a></li>
+                        <li>></li>
+                        <li><a href="stores.html">最新消息</a></li>
+                    </ol>
+                </div>
+                <!--            頁面位置-->
+                <div class="flex_item">
+                    <hr class="divider" />
+                    <div class="heading_title"><i class="fas fa-shopping-cart"></i> 購物車</div>
+                    <hr class="divider" />
+                </div>
+
+
+
+                <div id="content">
+
+                    <div class="status">
+                        <hr class="status-line">
+                        <div class="block block1">1</div>
+                        <div class="block block2">2</div>
+                        <div class="block block3">3</div>
+                    </div>
+
+                    <div class="status-word">
+                        <p>購物車</p>
+                        <p>填寫資料</p>
+                        <p>訂單確認</p>
+                    </div>
+
+                    <div class="pc-use-box">
+                        <div class="contact-box">
+                            <h2 class="customer-info">訂購人資料</h2>
+
+                            <div class="cus-input-box">
+
+                                <form action="" method="post">
+                                    <div>
+                                        <label for="name">姓名</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+
+                                    <div>
+                                        <label for="phone">電話或手機</label>
+                                        <input type="text" id="phone" name="phone">
+                                    </div>
+
+                                    <div><label for="email">電子信箱</label>
+                                        <input type="text" id="email" name="email">
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <div class="receiver-box">
+                            <h2 class="receiver-info">收件人資料</h2>
+
+                            <div class="rec-input-box">
+
+                                <form action="" method="post">
+                                    <label for="ckbox"><input type="checkbox" id="ckbox" name="ckbox">同訂購人資料</label>
+
+                                    <div>
+                                        <label for="name">收件人</label>
+                                        <input type="text" id="name" name="name">
+                                    </div>
+
+                                    <div>
+                                        <label for="phone">聯絡電話</label>
+                                        <input type="text" id="phone" name="phone">
+                                    </div>
+
+                                    <div>
+                                        <label for="address">收件地址</label>
+                                        <input type="text" id="address" name="address">
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <hr class="pay-line">
+
+                    <div class="order-remark">
+
+                        <!-- <div class="vertical"></div> -->
+
+                        <div class="trans-text-box">
+
+                            <form action="">
+
+                                <div class="pc-trans-ord-box">
+                                    <div class="pc-left-box">
+                                        <label for="">運送方式</label>
+                                        <div class="select-box">
+                                            <select style="border: 1px solid #808080" width="100%">
+                                                <option>宅配貨到付款(物流約3~5天)</option>
+                                                <option selected="true">到店自取(營業時間為08:00-18:00，休假日另行公告)</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="pc-right-box">
+                                        <div class="order-text">訂單備註</div>
+
+                                        <textarea name="" id="" maxlength="20" cols="40" rows="5"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="btn-box">
+                                    <div class="back-btn"><a href="#">&#60; 回上一頁</a></div>
+
+                                    <input type="submit" value="前往提交 &#62;">
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- id_footer -->
+        <div id="footer">
+            <footer>
+                <div class="footer-container">
+                    <nav class="footer-left">
+                        <ul class="footer-menu">
+                            <li><a href="＃">最新消息</a></li>
+                            <li><a href="＃">所有商品</a></li>
+                            <li><a href="＃">門市據點</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-line"></div>
+                    <div class="footer-right">
+                        <div class="footer-info">
+                            <p>服務時間：週一至週五9:30-18:00</p>
+                            <p>客服專線：04-1234-5678</p>
+                            <p>客服信箱：service@pento.com</p>
+                        </div>
+                        <div class="footer-down-info">
+                            <div class="footer-icon">
+                                <i class="fab fa-line"></i>
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="copyright">
+                                <i class="far fa-copyright"></i>
+                                <p>2020 Pento</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div><!-- id_footer end -->
+    </div>
+    <!--script-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/header-footer.js"></script>
+
+</body>
+
+</html>
