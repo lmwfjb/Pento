@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pento | 訂購明細</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pento | 購物車</title>
     <link rel="icon" href="images/LOGO.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="css/css_reset.css">
-    <link rel="stylesheet" href="css/header-footer.css">   
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/stores.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/products_list.css">
+    <link rel="stylesheet" href="css/shopping_cart.css">
     <link rel="stylesheet" href="css/shopping_cart_final.css">
+    <style>
+    .status>.block2,.status>.block3{
+        background-color: #fedc5e;
+        color: white;
+    }
+    </style>
 </head>
+
 <body>
-<div id="wrapper">
-    <div id="header">
+
+    <div id="wrapper">
+        <div id="header">
             <header>
                 <div class="container">
-                    <!--                --------header logo 區------------>
+<!--                --------header logo 區------------>
                     <div class="logo"><a href="index.html"><img src="images/LOGO.svg" alt="pentoLogo"></a></div>
-                    <!--                --------header nav選單 區------------>
+<!--                --------header nav選單 區------------>
                     <nav class="nav">
                         <ul class="header-menu">
                             <li><a href="news_list.html">最新消息</a></li>
-                            <p></p>
+                            <hr>
                             <li><a href="products_list.html">所有商品</a></li>
-                            <p></p>
+                            <hr>
                             <li><a href="stores.html">門市據點</a></li>
                         </ul>
                     </nav>
-                    <!--                --------header member-cart會員按鈕區------------>
+<!--                --------header member-cart會員按鈕區------------>
                     <div class="member-cart">
                         <div class="member"><a href="login.html">
                                 <i class="fa fa-user"></i>
@@ -36,13 +50,43 @@
                                 <i class="fas fa-shopping-cart"></i>
                             </a></div>
                         <div class="cart"></div>
-                        <!--                    --------header 選單縮放 按鈕區------------>
+<!--                    --------header 選單縮放 按鈕區------------>
                         <button><i class="fas fa-bars"></i></button>
                     </div>
                 </div>
             </header>
         </div>
-    <div class="cart_container">
+        <div class="store_wrapper">
+            <div class="store_container">
+                <!--            麵包屑-->
+                <div class="paddingleft_30">
+                    <ol class="breadcrumb-item">
+                        <li><a href="index.html">首頁</a></li>
+                        <li>></li>
+                        <li>購物車</li>
+                    </ol>
+                </div>
+                <!--            頁面位置-->
+                <div class="flex_item">
+                    <hr class="divider" />
+                    <div class="heading_title"><i class="fas fa-shopping-cart"></i> 購物車</div>
+                    <hr class="divider" />
+                </div>
+        <div id="content">
+                    <div class="status">
+                        <hr class="status-line">
+                        <div class="block block1">1</div>
+                        <div class="block block2">2</div>
+                        <div class="block block3">3</div>
+                    </div>
+
+                    <div class="status-word">
+                        <p>購物車</p>
+                        <p>填寫資料</p>
+                        <p>訂單確認</p>
+                    </div>
+                    
+                    <div class="cart_container">
         <div class="title">購物明細</div>
         <div class="cart_block">
             
@@ -124,7 +168,11 @@
         </div>
 
     </div>
-    <div id="footer">
+
+                </div>
+            </div>
+        </div>
+        <div id="footer">
             <footer>
                 <div class="footer-container">
                     <nav class="footer-left">
@@ -155,10 +203,12 @@
                     </div>
                 </div>
             </footer>
-        </div> 
-</div> 
-<!--script-->
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/header-footer.js"></script>
+        </div>
+</div>
+    <!--script-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/header-footer.js"></script>
+
 </body>
+
 </html>
