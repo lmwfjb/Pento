@@ -21,7 +21,7 @@ body {
 }
 
 .preview>.preview_photo>img {
-    background-color: white;
+    /* background-color: white; */
     padding: 5px;
     margin: 15px;
     width: 80%;

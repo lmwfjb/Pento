@@ -90,6 +90,7 @@ input[type="text"] {
     width: 100%;
     box-sizing: border-box;
     margin: .5em 0 2em 0;
+    font-size: 0.9rem;
 }
 
 input:focus {
