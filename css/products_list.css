@@ -48,7 +48,7 @@
                     }
                     
                     .product_sidemenu .menu_title>a:hover {
-                        font-size: 1.3em;
+                        font-size: 1.1em;
                     }
                     
                     .product_sidemenu .menu_title .submenu a:hover {
@@ -69,10 +69,11 @@
                     
                     .product_sidemenu .submenu li a {
                         display: block;
-                        font-size: 0.72em;
+                        font-size: 1rem;
                         text-align: center;
                         padding-left: 15px;
                         color: black;
+                        letter-spacing: 0.05rem;
                     }
                     /*-------------商品區塊-----------*/
                     
@@ -173,6 +174,7 @@
                         height: 100%;
                         font-size: 1.1rem;
                         padding: 3%;
+                        padding-bottom: 40px;
                     }
                     
                     .product .product_name {
@@ -233,15 +235,17 @@
                     
                     .product_quantity_block {
                         display: flex;
-                        justify-content: space-around;
+                        justify-content: center;
                         align-items: center;
                     }
                     
-                    .product .product_quantity_block .add_to_cart i {
-                        font-size: 24px;
-                        color: #007F4E;
-                        line-height: 30px;
+
+                    .add_to_cart>a>img{
+                        width: 25px;
+                        height: 25px;
+                        padding-left: 10px;
                     }
+
                     
                     .button_area {
                         width: 100%;
@@ -249,7 +253,7 @@
                         height: 40px;
                         /*    background-color: aqua;*/
                         position: relative;
-                        margin-bottom: 5%;
+                        margin: 5% 0;
                     }
                     
                     .back_button {
@@ -263,6 +267,8 @@
                         right: 0px;
                         color: white;
                         border-radius: 50px;
+                    }
+
                         @media(max-width: 768px) {
                             .button_area {
                                 margin: 10% 0;
