@@ -257,6 +257,15 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/header-footer.js"></script>
     <script src="js/quantity.js"></script>
+    <script>
+
+        $('.five>i').click(function () {
+            // Remove Items From Cart
+            event.preventDefault();
+            $(this).parent().parent().parent().parent().hide(400);
+
+        });
+    </script>
 
 </body>
 
