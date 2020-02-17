@@ -135,13 +135,13 @@ body {
 .qty-input>.more {
     color: #454545;
     width: 50px;
-    line-height: 20px;
+    line-height: 28px;
     background: none;
 }
 
 .qty-input {
     width: 180px;
-    height: 20px;
+    height: 28px;
     border: none;
     margin-top: 40px;
 }
@@ -149,8 +149,8 @@ body {
 .qty-input div {
     cursor: pointer;
     font-family: serif;
-    height: 20px;
-    line-height: 20px;
+    height: 28px;
+    line-height: 28px;
     text-align: center;
     user-select: none;
     transition: all 150ms ease-out;
