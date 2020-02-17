@@ -490,5 +490,12 @@ footer{
 }
 .slick-dots li button::before {
     font-size: 20px;
+    color:#81552F;
+    border-radius: 50%;
+    padding: 1px;
 }
-
+.slick-dots li.slick-active button:before {
+    color:#81552F;
+/*    border: 2px solid #81552F;*/
+    
+}
