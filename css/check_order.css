@@ -23,6 +23,11 @@ body {
     font-weight: normal;
 }
 
+
+#content{
+    padding-top: 50px;
+}
+
 main {
     display: flex;
     width: 100%;
@@ -43,21 +48,23 @@ main>aside {
 }
 
 @media screen and (max-width: 768px) {
-    main {
+    main{
         flex-direction: column;
         width: 90%;
         margin: 0px auto 30px auto;
     }
     main>.aside {
         display: flex;
-        width: 66.66%;
+        width: 100%;
         padding: 0;
         margin: 0 auto;
         margin-bottom: 20px;
+        justify-content: space-around;
     }
     main>.aside>a {
         margin: 0 0;
         width: 50%;
+        display: block;
     }
 }
 
@@ -81,6 +88,30 @@ main>aside {
 }
 
 
+
+@media screen and (min-width: 768px){
+    .aside>.active {
+        background-color: #FEDC5E;
+        border: none;
+        border-radius: 4px;
+    }
+    
+    .aside>a {
+        display: block;
+        width: 100px;
+        line-height: 50px;
+        text-align: center;
+        background-color: white;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin: 10px 0;
+    }
+    
+    
+}
+
+
 /* ---------------aside結束---------------- */
 
 .product_list,
@@ -88,6 +119,7 @@ main>aside {
     padding: 0 20px;
     border: 1px solid #6F6F6F;
     margin-bottom: 20px;
+    
 }
 
 .product_list {
@@ -95,11 +127,13 @@ main>aside {
     flex-direction: column;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-radius: 4px;
 }
 
 .user_information {
     padding-top: 5px;
     padding-bottom: 15px;
+    border-radius: 4px;
 }
 
 .product_list ul li {
@@ -109,6 +143,7 @@ main>aside {
 }
 
 .product_list ul li p {
+    font-size: .9rem;
     margin: 10px auto;
     letter-spacing: 0.03rem;
 }
@@ -122,10 +157,6 @@ main>aside {
     border-bottom: 1px solid rgba(165, 165, 165, 0.50);
 }
 
-.product_list ul li img {
-    width: 40px;
-    height: 40px;
-}
 
 @media screen and (max-width: 768px) {
     .product_list ul li img {
@@ -134,13 +165,14 @@ main>aside {
 }
 
 .img_and_text {
-    width: 65%
+    width: 50%;
 }
 
 @media screen and (max-width: 768px) {
-    .img_and_text {
-        width: 40% line-height: 70px;
-    }
+    /* .img_and_text {
+        width: 40%;
+        line-height: 70px;
+    } */
 }
 
 .img_and_text {
@@ -186,17 +218,26 @@ main>aside {
 }
 
 button {
+    border: 0;
+    background-color: transparent;
+    outline: none;
     align-self: flex-end;
     background-color: #007f4e;
     width: 100px;
     height: 40px;
     border-radius: 20px;
     border: none;
-    font-size: 1em;
+    
 }
 
 button a {
+    display: block;
+    width: 100%;
+    /* line-height: 40px; */
+    font-size: 1rem;
     color: white;
+    outline: none;
+    font-size: 14px;
 }
 
 .user_information ul li p {

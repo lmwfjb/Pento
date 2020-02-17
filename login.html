@@ -68,7 +68,7 @@
                         <input type="password" id="password" />
                     </div>
                     <div class="u-form-group">
-                        <button><a href="user_info.html">立即登入</a></button>
+                        <button class="login-a"><a href="user_info.html">立即登入</a></button>
                     </div>
                     <div class="u-form-group">
                         <a href="resetpassword.html" class="forgot-password">忘記密碼</a>
@@ -140,13 +140,13 @@
     <script src="js/header-footer.js"></script>
     <script>
         $(".email-signup").hide();
-        $("#signup-box-link").click(function() {
+        $("#signup-box-link").click(function () {
             $(".email-login").fadeOut(100);
             $(".email-signup").delay(100).fadeIn(100);
             $("#login-box-link").removeClass("active");
             $("#signup-box-link").addClass("active");
         });
-        $("#login-box-link").click(function() {
+        $("#login-box-link").click(function () {
             $(".email-login").delay(100).fadeIn(100);;
             $(".email-signup").fadeOut(100);
             $("#login-box-link").addClass("active");

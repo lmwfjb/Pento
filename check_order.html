@@ -10,8 +10,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="css/css_reset.css">
     <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/check_order.css">
     <link rel="stylesheet" href="css/breadcrumb.css">
+    <link rel="stylesheet" href="css/check_order.css">
+    <style>
+        /* .info-sec>.aside {
+            width: 33.33%;
+            padding: 70px 0 0 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .info-sec>.aside {
+                display: flex;
+                width: 66.66%;
+                padding: 0;
+            }
+
+            .info-sec>.aside>a {
+                margin: 0 0;
+                width: 50%;
+            }
+        }
+
+        .aside>.active {
+            background-color: #FEDC5E;
+            border: none;
+        }
+
+        .aside>a {
+            display: block;
+            width: 100px;
+            line-height: 50px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid lightgray;
+            box-sizing: border-box;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        .info-sec>.aside {
+            width: 33.33%;
+            padding: 70px 0 0 30px;
+        } */
+    </style>
 </head>
 
 <body>
@@ -64,6 +106,7 @@
             </section> -->
 
             <main class="info-sec">
+
                 <aside class="aside">
                     <a href="#" class="active" id="user-info-link">個人資訊</a>
                     <a href="user_info.html" id="check-order-link">訂單查詢</a>
@@ -78,17 +121,17 @@
                                 <p>數量</p>
                             </li>
                             <li>
-                                <p class="img_and_text"><img src="images/products/red.png" alt="">《鮮食調理包》鮮蝦番茄鮭魚口味</p>
+                                <p class="img_and_text">《鮮食調理包》鮮蝦番茄鮭魚口味</p>
                                 <p>NT.125</p>
                                 <p>1</p>
                             </li>
                             <li>
-                                <p class="img_and_text"><img src="images/products/yellow.png" alt="">《鮮食調理包-超值組合》</p>
+                                <p class="img_and_text">《鮮食調理包-超值組合》</p>
                                 <p>NT.666</p>
                                 <p>1</p>
                             </li>
                             <li class="bottom_line">
-                                <p class="img_and_text"><img src="images/products/MEAT_beef.png" alt="">《天然手作肉乾》牛肉</p>
+                                <p class="img_and_text">《天然手作肉乾》牛肉</p>
                                 <p>NT.160</p>
                                 <p>1</p>
                             </li>
@@ -130,7 +173,7 @@
                             <p class="text_bold">收件人資訊</p>
                             <li>
                                 <p>收件人</p>
-                                <p>王伯原</p>
+                                <p>王小華</p>
                             </li>
                             <li>
                                 <p>收件地址</p>
@@ -208,14 +251,14 @@
 
     <script>
         $("#check-order-id").hide();
-        $("#check-order-link").click(function() {
+        $("#check-order-link").click(function () {
             $("#user-form-id").fadeOut(100);
             $("#check-order-id").delay(100).fadeIn(100);
             $("#user-info-link").removeClass("active");
             $("#check-order-link").addClass("active");
         });
 
-        $("#user-info-link").click(function() {
+        $("#user-info-link").click(function () {
             $("#check-order-id").fadeOut(100);
             $("#user-form-id").delay(100).fadeIn(100);
             $("#check-order-link").removeClass("active");

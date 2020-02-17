@@ -69,11 +69,13 @@
 
                 <div id="user-form-id" class="user-form">
                     <div class="title">個人資訊</div>
-                    <div><label for="name">姓名</label><input type="text" id="name" name="name" value=" 王伯原"></div>
+                    <div><label for="name">姓名</label><input type="text" id="name" name="name" value="  王伯原"></div>
 
-                    <div><label for="email">電子信箱</label><input type="text" id="email" name="email" value=" bobo_number1@gmail.com"></div>
+                    <div><label for="email">電子信箱</label><input type="text" id="email" name="email"
+                            value="  bobo_number1@gmail.com"></div>
 
-                    <div><label for="phone">聯絡電話</label><input type="text" id="phone" name="phone" value=" 0988453632"></div>
+                    <div><label for="phone">聯絡電話</label><input type="text" id="phone" name="phone" value="  0988453632">
+                    </div>
 
                     <!-- <div><label for="address">收貨地址</label><input type="text" id="address" name="address"></div> -->
 
@@ -149,14 +151,14 @@
 
     <script>
         $("#check-order-id").hide();
-        $("#check-order-link").click(function() {
+        $("#check-order-link").click(function () {
             $("#user-form-id").fadeOut(100);
             $("#check-order-id").delay(100).fadeIn(100);
             $("#user-info-link").removeClass("active");
             $("#check-order-link").addClass("active");
         });
 
-        $("#user-info-link").click(function() {
+        $("#user-info-link").click(function () {
             $("#check-order-id").fadeOut(100);
             $("#user-form-id").delay(100).fadeIn(100);
             $("#check-order-link").removeClass("active");

@@ -1,5 +1,5 @@
 body {
-    font-family: "微軟正黑體";
+    background-color: #fffbed;
 }
 
 .breadcrumb-sec {
@@ -25,9 +25,9 @@ body {
     display: flex;
     width: 100%;
     max-width: 700px;
-    height: 580px;
+    height: 500px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .info-sec>.aside {
@@ -68,6 +68,13 @@ body {
     border: 1px solid lightgray;
     box-sizing: border-box;
     margin: 10px 0;
+    
+}
+
+@media screen and (min-width: 768px){
+    .aside>a {
+    border-radius: 4px;
+    }
 }
 
 .user-form {
@@ -91,6 +98,7 @@ input[type="text"] {
     box-sizing: border-box;
     margin: .5em 0 2em 0;
     font-size: 0.9rem;
+    border-radius: 4px;
 }
 
 input:focus {
@@ -105,12 +113,11 @@ input:focus {
 .cancel-btn,
 .submit-btn {
     width: 100px;
-    font-size: 1rem;
-    border-radius: 4px;
-    padding: 10px 0;
+    line-height: 37px;
+    font-size: 14px;
+    border-radius: 50px;
     margin: 40px 0 0 10px;
     outline: none;
-    box-shadow: 1px 2px 4px rgb(180, 179, 179);
 }
 
 .cancel-btn {
@@ -124,7 +131,7 @@ input:focus {
 }
 
 .submit-btn {
-    background-color: rgb(255, 59, 59);
+    background-color: #007f4e;
     border: none;
     color: white;
 }
@@ -156,16 +163,23 @@ h1 {
     font-size: .9rem;
 }
 
+.order-box>.number{
+    font-size: 1rem;
+    letter-spacing: .03rem;
+}
+
 .order-box>button {
-    width: 60px;
-    height: 30px;
-    border-radius: 8px;
+    width: 80px;
+    height: 40px;
+    border: 1px solid lightgray;
+    border-radius: 50px;
     box-sizing: border-box;
     outline: none;
+    background-color: #fff;
 }
 
 .check-btn>a {
     display: block;
-    font-size: .9em;
-    letter-spacing: .1em;
+    font-size: 14px;
+    letter-spacing: .03rem;
 }
