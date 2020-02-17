@@ -25,9 +25,10 @@ input[type="text"]{
 }
 
 .cus-input-box{
+    box-sizing: border-box;
     height: 100%;
-    border: 1px solid #fedc5e;
-    border-radius: 15px;
+/*    border: 1px solid #6F6F6F;*/
+    border-radius: 4px;
     background-color: #fff;
     padding: 0 20px 30px 20px;
 }
@@ -44,7 +45,9 @@ input[type="text"]{
     letter-spacing: .03rem;
     padding: 20px 0 8px 5px;
 }
-
+input:focus{
+    border-color: #029f5b;
+}
 
 /* --------- receiver-box --------- */
 .receiver-box{
