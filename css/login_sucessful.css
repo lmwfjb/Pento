@@ -25,6 +25,8 @@
     border: none;
     background-color: #FEDC5E;
     border-radius: 50px;
+    width: 30%;
+    height: 40px;
 }
 .login-box a{
     display: block;
@@ -34,3 +36,4 @@
     border-radius: 50px;
     margin: 5% 0 0 0;
 }
+
