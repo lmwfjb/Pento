@@ -1,5 +1,8 @@
 body{
     background-color:#FFFBED;
+    width: 100%;
+    overflow-x: hidden;
+    
 }
 h2,h3{
     color: #81552F;  
