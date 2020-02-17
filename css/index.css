@@ -235,7 +235,7 @@ header{
         width: 40%;
         top:50%;
         right: -17%;
-        transform: rotate(-15deg);
+/*        transform: rotate(-15deg);*/
     }
     .dogmeat{
         position: absolute;
