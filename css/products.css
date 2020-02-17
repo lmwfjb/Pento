@@ -63,13 +63,13 @@ body {
 .qty-input>.more {
     color: #454545;
     width: 50px;
-    line-height: 20px;
+    line-height: 40px;
     background: none;
 }
 
 .qty-input {
     /* width: 28%; */
-    height: 30px;
+    height: 40px;
     margin-left: 15px;
     /* width: 180px;
     height: 20px; */
@@ -82,8 +82,8 @@ body {
 .qty-input div {
     cursor: pointer;
     font-family: serif;
-    height: 30px;
-    line-height: 20px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     user-select: none;
     transition: all 150ms ease-out;
@@ -104,14 +104,14 @@ body {
 
 .product_container>.preview>.preview_content>.preview_button>.purchase_button {
     width: 20%;
-    height: 30px;
+    height: 40px;
     font-weight: bold;
     color: white;
     background-color: #007f4e;
     border-radius: 8px;
     margin-left: 4%;
     text-align: center;
-    line-height: 30px;
+    line-height: 40px;
     margin: 0 auto;
 }
 
