@@ -187,7 +187,12 @@ body {
     display: block;
     font-weight: normal;
 }
-
+.text01 .text01_description {
+    /* padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px; */
+    display: none;
+}
 @media screen and (max-width:768px) {
     .product_container>.preview {
         display: flex;
@@ -233,6 +238,10 @@ body {
         padding-left: 20px;
         padding-top: 20px;
         padding-bottom: 10px;
+        display: block;
+    }
+    .web_title{
+        display: none;
     }
     .preview_content>.preview_text>.text02 {
         margin: 10px;
