@@ -248,8 +248,8 @@ input {
 
 .button_area {
     width: 100%;
-    min-width: 65px;
-    height: 30px;
+    min-width: 100px;
+    height: 40px;
     /*    background-color: aqua;*/
     position: relative;
     margin-bottom: 5%;
@@ -257,15 +257,15 @@ input {
 
 .back_button {
     display: block;
-    width: 10%;
+    width: 20%;
+    max-width: 100px;
     background-color: #007F4E;
-    line-height: 30px;
+    line-height: 40px;
     text-align: center;
     position: absolute;
     right: 0px;
     color: white;
-    border-radius: 10px;
-}
+    border-radius:50px;
 
 @media(max-width:768px) {
     .button_area {
