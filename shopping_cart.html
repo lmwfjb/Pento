@@ -112,16 +112,17 @@
                                 <div class="word">
                                     <div class="pd-title">《鮮食調理包》</div>
 
-                                    <div class="two">NT$128</div>
+                                    <div class="two">NT$
+                                        <span class="price1">128</span></div>
 
                                     <div class="qty-input">
-                                        <div class="less"><i class="fas fa-minus fa-xs"></i></div>
-                                        <input type="text" value="2" onkeyup="return ValidateNumber($(this),value)" />
-                                        <div class="more"><i class="fas fa-plus fa-xs"></i></div>
+                                        <div class="less less1"><i class="fas fa-minus fa-xs"></i></div>
+                                        <input type="text" value="3" class="input1"
+                                            onkeyup="return ValidateNumber($(this),value)" />
+                                        <div class="more less1"><i class="fas fa-plus fa-xs"></i></div>
                                     </div>
-
-                                    <div class="four">NT$256</div>
-
+                                    <div class="four">NT$
+                                        <span class="fprice1">384</span></div>
                                     <div class="five"><i class="fas fa-times-circle fa-sm"></i></div>
 
                                 </div>
@@ -138,15 +139,19 @@
                                 <div class="word">
                                     <div class="pd-title">《鮮食調理包-超值組合》</div>
 
-                                    <div class="two">NT$666</div>
+                                    <div class="two">NT$
+                                        <span class="price2">666</span></div>
 
                                     <div class="qty-input">
-                                        <div class="less"><i class="fas fa-minus fa-xs"></i></div>
-                                        <input type="text" value="1" onkeyup="return ValidateNumber($(this),value)" />
-                                        <div class="more"><i class="fas fa-plus fa-xs"></i></div>
+                                        <div class="less less2"><i class="fas fa-minus fa-xs"></i></div>
+                                        <input type="text" value="1" class="input2"
+                                            onkeyup="return ValidateNumber($(this),value)" />
+                                        <div class="more more2"><i class="fas fa-plus fa-xs"></i></div>
                                     </div>
 
-                                    <div class="four">NT$666</div>
+                                    <div class="four">NT$
+                                        <span class="fprice2">666</span>
+                                    </div>
 
                                     <div class="five"><i class="fas fa-times-circle fa-sm"></i></div>
                                 </div>
@@ -162,15 +167,18 @@
                                 <div class="word">
                                     <div class="pd-title">《天然手作肉乾》</div>
 
-                                    <div class="two">NT$160</div>
+                                    <div class="two">NT$
+                                        <span class="price3">160</span></div>
 
                                     <div class="qty-input">
-                                        <div class="less"><i class="fas fa-minus fa-xs"></i></div>
-                                        <input type="text" value="3" onkeyup="return ValidateNumber($(this),value)" />
-                                        <div class="more"><i class="fas fa-plus fa-xs"></i></div>
+                                        <div class="less less3"><i class="fas fa-minus fa-xs"></i></div>
+                                        <input type="text" value="3" class="input3"
+                                            onkeyup="return ValidateNumber($(this),value)" />
+                                        <div class="more more3"><i class="fas fa-plus fa-xs"></i></div>
                                     </div>
 
-                                    <div class="four">NT$480</div>
+                                    <div class="four">NT$
+                                        <span class="fprice3">480</span></div>
 
                                     <div class="five"><i class="fas fa-times-circle fa-sm"></i></div>
                                 </div>
@@ -194,9 +202,9 @@
                                     </div>
 
                                     <div class="item-price">
-                                        <p>NT$ <span>1,402</span> </p>
+                                        <p>NT$ <span class="p_price">1402</span> </p>
                                         <p>NT$ <span>100</span></p>
-                                        <p>NT$ <span>1,502</span></p>
+                                        <p>NT$ <span class="t_price">1502</span></p>
                                     </div>
                                 </div>
 
@@ -257,6 +265,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/header-footer.js"></script>
     <script src="js/quantity.js"></script>
+    <script src="js/count.js"></script>
     <script>
 
         $('.five>i').click(function () {
