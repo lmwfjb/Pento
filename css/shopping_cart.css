@@ -131,7 +131,7 @@ body {
     margin: 8px;
 }
 
-.qty-input>.less,
+/* .qty-input>.less,
 .qty-input>.more {
     color: #454545;
     width: 50px;
@@ -167,7 +167,51 @@ body {
     outline: none;
     color: #454545;
     font-weight: 500;
+} */
+.qty-input-c{
+    margin: 8px;
+    margin-top: 20px;
+    width: 40%;
+
+    margin-right: 5%;
 }
+.qty-input {
+    padding-left: 2% 2%;
+    border: 1px solid #353535;
+    border-radius: 20px;
+    height: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.qty-input div {
+    cursor: pointer;
+    font-family: serif;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    user-select: none;
+    transition: all 150ms ease-out;
+    width: 20%;
+    background-color: #FFFBED;
+}                  
+input {
+    width: 50%;
+    border: 0px solid;
+    border-left: 1px solid #353535;
+    border-right: 1px solid #353535;
+    font-size: 20px;
+    text-align: center;
+    outline: none;
+    background-color: #FFFBED;
+}
+
+
+
+
+
 
 .pic-word-box>.word>.four {
     display: none;
@@ -249,15 +293,16 @@ body {
     }
     .pic-word-box>.word>.two {
         margin: 0;
-        width: 24%;
+        width: 20%;
+        margin-right: 5%;
         line-height: 20px;
         text-align: center;
     }
-    .pic-word-box>.word>.qty-input {
+    /* .pic-word-box>.word>.qty-input {
         margin: 0;
         width: 20%;
-        margin-right: 3%;
-    }
+        margin-right: 3%; 
+    } */
     .pic-word-box>.word>.four {
         display: block;
         width: 20%;
@@ -272,6 +317,46 @@ body {
         line-height: 20px;
         text-align: center;
     }
+
+    .qty-input-c{
+        margin: 0px;
+
+        width: 18%;
+        margin-right: 5%;
+    }
+    .qty-input {
+        padding-left: 2% 2%;
+        border: 1px solid #353535;
+        border-radius: 20px;
+        height: 25px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0;
+        overflow: hidden;
+    }
+    .qty-input div {
+        cursor: pointer;
+        font-family: serif;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        user-select: none;
+        transition: all 150ms ease-out;
+        width: 20%;
+        background-color: #FFFBED;
+    }                  
+    input {
+        width: 50%;
+        border: 0px solid;
+        border-left: 1px solid #353535;
+        border-right: 1px solid #353535;
+        font-size: 20px;
+        text-align: center;
+        outline: none;
+        background-color: #FFFBED;
+    }
+
 }
 
 .pay-line {
