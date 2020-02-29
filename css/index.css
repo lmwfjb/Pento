@@ -9,6 +9,9 @@ h2,h3{
     text-align: center;
     margin: 5% 0;
 }
+#header{
+    z-index: 999;
+}
 header{
     background-color: transparent;
     box-shadow: none;
@@ -22,6 +25,14 @@ header{
 
 .main{
     margin-top: -90px;
+}
+.ban{
+    position: relative;
+    height: 50%;
+}
+.banner_bm{
+    position: absolute;
+    bottom: 0px;
 }
 /*--以下為banner 視覺大圖 區--*/
 .banner{
@@ -72,10 +83,9 @@ header{
 .banner_bm{
     height: auto;
     width: 100%;
-    position: relative;
+/*    position: relative;*/
     display: flex;
     justify-content: center;
-/*    overflow: hidden;*/
 }
 .banner_bm_bg{
     width: 100%;
