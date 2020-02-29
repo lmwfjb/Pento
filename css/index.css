@@ -26,11 +26,13 @@ header{
 /*--以下為banner 視覺大圖 區--*/
 .banner{
     background-image: url(../images/index/guiji-bg-w1920.jpg);
-    background-size: auto 50%;
-    background-position: center top;
+    background-size: cover;
+    background-position: center bottom;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-color: aqua;
     height: 50vh;
+    min-height: 400px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -49,6 +51,7 @@ header{
     }
     .banner{
         height: 95vh;
+        max-height: 1080px;
         background-size: cover;
     }
 }
@@ -379,6 +382,7 @@ header{
 /*        height: 600px;*/
     }
     .ingredient_bg_l,.ingredient_bg_r{
+        overflow-x: hidden;
         display: block;
         width: 23%;
         max-width: 350px;
