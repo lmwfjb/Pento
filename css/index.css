@@ -27,7 +27,7 @@ header{
 .banner{
     background-image: url(../images/index/guiji-bg-w1920.jpg);
     background-size: cover;
-    background-position: center bottom;
+    background-position: center top;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: aqua;
@@ -42,7 +42,7 @@ header{
 @media screen and (min-width:566px){
     .banner{
         height: 80vh;
-        background-size: auto 100%;
+        background-size: cover;
     }
 }
 @media screen and (min-width:769px){
