@@ -48,7 +48,7 @@ header{
     background-repeat: no-repeat;
 */
 /*    background-color: aqua;*/
-    height: 50vh;
+    height: 50%;
     min-height: 400px;
     width: 100%;
     display: flex;
