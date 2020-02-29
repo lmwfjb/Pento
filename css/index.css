@@ -36,8 +36,8 @@ header{
 }
 /*--以下為banner 視覺大圖 區--*/
 .banner{
-    background-image: url(../images/index/guiji-bg-wtest.jpg);
-    background-size: cover;
+    background-image: url(../images/index/guiji-bg-w600.jpg);
+/*    background-size: cover;*/
     background-position: center top;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@ header{
 }
 @media screen and (min-width:566px){
     .banner{
-    background-image: url(../images/index/guiji-bg-w1920.jpg);
+        background-image: url(../images/index/guiji-bg-w1140.jpg);
         height: 80vh;
         background-size: cover;
     }
@@ -62,6 +62,7 @@ header{
         margin-top: -110px;
     }
     .banner{
+        background-image: url(../images/index/guiji-bg-w1920.jpg);
         height: 95vh;
         max-height: 1080px;
         background-size: cover;
