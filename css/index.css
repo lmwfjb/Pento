@@ -103,7 +103,7 @@ header{
 }
 .banner_bm{
     position: absolute;
-    bottom:  -30px;
+    bottom:  -10%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -111,7 +111,7 @@ header{
 .banner_bm_bg{
     width: 100%;
     height: 0;
-    padding-bottom:20%;
+    padding-bottom:30%;
     background-image: url("../images/index/header-bg.svg");
     background-size: cover;
     background-position: center bottom;
@@ -153,12 +153,16 @@ header{
     .banner_food{
         width: 300px;
         right:calc( 50% - 150px);
+        top:5%;
     }
 }
 
 @media screen and (min-width:1600px){
     .banner_bm{
         bottom: -10%;
+    }
+    .banner_food{
+        top:20%;
     }
 }
 /*--    以下為story 品牌故事 區--*/
