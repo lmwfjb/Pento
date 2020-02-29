@@ -103,7 +103,7 @@ header{
 }
 .banner_bm{
     position: absolute;
-    bottom:  -10px;
+    bottom:  -30px;
     width: 100%;
     display: flex;
     justify-content: center;
