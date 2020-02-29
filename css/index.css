@@ -65,7 +65,7 @@ header{
       bottom: 0;
       left: 0;
       background: url(../images/index/guiji-bg-w1920.jpg) 60% -110px no-repeat;
-      background-size: cover;
+      background-size: auto 100%;
 }
 @media screen and (min-width:566px){
     .banner{
