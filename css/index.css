@@ -1,5 +1,5 @@
 html{
-    height: 100%;
+/*    height: 100%;*/
 }
 body{
     background-color:#FFFBED;
@@ -103,7 +103,7 @@ header{
 }
 .banner_bm{
     position: absolute;
-    bottom: 0px;
+    bottom:  -10px;
     width: 100%;
     display: flex;
     justify-content: center;
