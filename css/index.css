@@ -37,7 +37,7 @@ header{
 /*--以下為banner 視覺大圖 區--*/
 .banner{
     background-image: url(../images/index/guiji-bg-w600.jpg);
-    background-size: cover;
+/*    background-size: cover;*/
     background-position: center top;
     background-attachment: fixed;
     background-repeat: no-repeat;
