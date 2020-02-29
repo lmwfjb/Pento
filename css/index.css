@@ -1,3 +1,6 @@
+html{
+    height: 100%;
+}
 body{
     background-color:#FFFBED;
     width: 100%;
@@ -39,7 +42,7 @@ header{
     background-image: url(../images/index/guiji-bg-w1920.jpg);
     background-size: cover;
     background-position: 60% -70px;
-/*    background-attachment: fixed;*/
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: aqua;
     height: 50vh;
