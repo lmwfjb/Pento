@@ -32,16 +32,11 @@ header{
 .main-down{
     background-color:#FFFBED;
     position: relative;
-    z-index: 999;
+    z-index: 9;
 }
 .ban{
     position: relative;
     height: 50%;
-}
-.banner_bm{
-    position: absolute;
-    bottom: 0;
-/*    border: 1px solid red;*/
 }
 /*--以下為banner 視覺大圖 區--*/
 .banner{
@@ -69,32 +64,28 @@ header{
       right: 0;
       bottom: 0;
       left: 0;
-      background: url(../images/index/guiji-bg-w600.jpg) center 0 no-repeat;
-      background-size: auto 60%;
+      background: url(../images/index/guiji-bg-w1920.jpg) 60% -110px no-repeat;
+      background-size: cover;
 }
 @media screen and (min-width:566px){
     .banner{
-        height: 80vh;
+        height: 90vh;
         background-size: cover;
     }
     .banner::after{
-      background: url(../images/index/guiji-bg-w1140.jpg) center 0 no-repeat;
-      background-size: cover;
+      background: url(../images/index/guiji-bg-w1920.jpg) center -100px no-repeat;
     }
 }
 @media screen and (min-width:769px){
     .main{
-        margin-top: -110px;
+        margin-top: -210px;
     }
     .banner{
-        height: 95vh;
+        height: 100vh;
         max-height: 1080px;
         background-size: cover;
     }
-    .banner::after{
-      background: url(../images/index/guiji-bg-w1920.jpg) center 0 no-repeat;
-      background-size: cover;
-    }
+
 }
 .banner_desc{
     padding-top: 10%;
@@ -111,9 +102,9 @@ header{
     letter-spacing: 7px;
 }
 .banner_bm{
-    height: auto;
+    position: absolute;
+    bottom: 0px;
     width: 100%;
-/*    position: relative;*/
     display: flex;
     justify-content: center;
 }
@@ -132,11 +123,19 @@ header{
     max-width: 300px;
     position: absolute;
     right: 35%;
-    z-index: 9999;
+    z-index: 99;
 }
 @media screen and (max-height:450px){
     .banner_desc{
         padding-top: 0%;
+    }
+}
+@media screen and (min-width:768px){
+
+    @media screen and (max-height:730px){
+        .banner_desc{
+            display: none;
+        }
     }
 }
 @media screen and (min-width:900px){
@@ -153,16 +152,13 @@ header{
     }
     .banner_food{
         width: 300px;
-        top: -10%;
         right:calc( 50% - 150px);
     }
 }
-@media screen and (min-width:1740px){
 
-    @media screen and (max-height:730px){
-        .banner_desc{
-            display: none;
-        }
+@media screen and (min-width:1600px){
+    .banner_bm{
+        bottom: -10%;
     }
 }
 /*--    以下為story 品牌故事 區--*/
@@ -170,7 +166,6 @@ header{
     position: relative;
 /*    border: 3px solid aqua;*/
 /*    padding-top: 30%;   */
-        margin-top: -5%;
     
 }
 @media screen and (min-width:769px){
