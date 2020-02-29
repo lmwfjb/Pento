@@ -186,7 +186,7 @@ header .member>a:hover,
     color: #81552F;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
     header .member>a {
         padding: 0 20px;
     }
@@ -216,7 +216,7 @@ header .member-cart>button>i.fa-times {
     cursor: pointer;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:769px) {
     header .member-cart>button>i {
         display: none;
     }
