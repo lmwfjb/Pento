@@ -56,7 +56,7 @@ header{
     align-items: center;
     justify-content: space-around;
 }
-.banner::after{
+.banner::before{
       content: ' ';
       position: fixed;
       z-index: -1;
