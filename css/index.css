@@ -401,7 +401,7 @@ header{
 .ingredient_bg_l,.ingredient_bg_r{
     display: none;
     position: relative;
-    height: 100%;
+    height: 110%;
 }
 .ingredient_bg_l img,.ingredient_bg_r img{
     position: absolute;
