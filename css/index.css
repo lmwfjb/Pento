@@ -428,9 +428,9 @@ header{
 /*        height: 600px;*/
     }
     .ingredient_bg_l,.ingredient_bg_r{
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         display: block;
-        width: 23%;
+        width: 22%;
         max-width: 350px;
     }
 }
