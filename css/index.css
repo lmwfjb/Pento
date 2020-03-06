@@ -39,11 +39,6 @@ header{
     height: 50%;
     min-height: 350px;
 }
-@media screen and (min-height:600px){
-    .ban{
-        height: 100%;
-    }
-}
 /*--以下為banner 視覺大圖 區--*/
 .banner{
 /*
@@ -71,35 +66,17 @@ header{
       bottom: 0;
       left: 0;
       background: url(../images/index/guiji-bg-w1920.jpg) 60% -110px no-repeat;
-      background-size: auto 100vh;
+/*      background-size: auto 100vh;*/
+        background-size:cover;
 }
 @media screen and (min-width:566px){
     .banner{
         height: 90vh;
         background-size: cover;
     }
-    .banner::after{
-      background: url(../images/index/guiji-bg-w1920.jpg) center -100px no-repeat;
-    }
-}
-@media screen and (min-width:769px){
-    .main{
-        margin-top: -210px;
-    }
-    .banner{
-        height: 100vh;
-        max-height: 1080px;
-        background-size: cover;
-    }
-
-}
-@media screen and (max-height:600px){
-    .banner::before{
-        background-size:cover;
-    }
 }
 .banner_desc{
-    padding-top: 10%;
+    padding-top: 25%;
     color: white;
     text-shadow: 0em 0em 0.2em #333;
 }
@@ -114,7 +91,7 @@ header{
 }
 .banner_bm{
     position: absolute;
-    bottom:  -10%;
+    bottom:  -7%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -136,13 +113,21 @@ header{
     right: 35%;
     z-index: 99;
 }
-@media screen and (max-width:767px){
+@media screen and (max-height:500px){
     .banner_desc{
-        padding-top: 35%;
+        display: none;
     }
-    @media screen and (max-height:500px){
+}
+@media screen and (min-width:768px){
+    .banner_desc{
+        padding-top: 10%;
+    }
+    .banner_desc{
+        display: block;
+    }
+    @media screen and (max-height:730px){
         .banner_desc{
-            padding-top: 10%;
+            display: none;
         }
     }
 }
@@ -170,40 +155,12 @@ header{
         bottom: -10%;
     }
     .banner_food{
-        top:20%;
-    }
-}
-@media screen and (max-height:600px){
-    .banner_food{
-        width: 20%;
-        right: 40%;
-        top:15%;
-    }
-    .banner_bm{
-        bottom: -15%;
-    }
-}
-@media screen and (max-height:375px){
-    .banner_desc{
-        display: none;
+        top:30%;
     }
 }
 /*--    以下為story 品牌故事 區--*/
 .story{
     position: relative;
-/*    border: 3px solid aqua;*/
-/*    padding-top: 30%;   */
-    
-}
-@media screen and (min-width:769px){
-    .story{
-/*        margin-top: 20%;   */
-    }
-}
-@media screen and (min-width:1140px){
-    .story{
-/*        padding-top: -10%;   */
-    }
 }
 /*--    以下為story 品牌故事 Ｍ 區--*/
 .story_m{
