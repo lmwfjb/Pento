@@ -37,6 +37,12 @@ header{
 .ban{
     position: relative;
     height: 50%;
+    min-height: 350px;
+}
+@media screen and (min-height:600px){
+    .ban{
+        height: 100%;
+    }
 }
 /*--以下為banner 視覺大圖 區--*/
 .banner{
@@ -49,7 +55,7 @@ header{
 */
 /*    background-color: aqua;*/
     height: 50%;
-    min-height: 400px;
+/*    min-height: 400px;*/
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -86,6 +92,11 @@ header{
         background-size: cover;
     }
 
+}
+@media screen and (max-height:600px){
+    .banner::before{
+        background-size:cover;
+    }
 }
 .banner_desc{
     padding-top: 10%;
@@ -125,16 +136,13 @@ header{
     right: 35%;
     z-index: 99;
 }
-@media screen and (max-height:450px){
+@media screen and (max-width:767px){
     .banner_desc{
-        padding-top: 0%;
+        padding-top: 35%;
     }
-}
-@media screen and (min-width:768px){
-
-    @media screen and (max-height:730px){
+    @media screen and (max-height:500px){
         .banner_desc{
-            display: none;
+            padding-top: 10%;
         }
     }
 }
@@ -163,6 +171,21 @@ header{
     }
     .banner_food{
         top:20%;
+    }
+}
+@media screen and (max-height:600px){
+    .banner_food{
+        width: 20%;
+        right: 40%;
+        top:15%;
+    }
+    .banner_bm{
+        bottom: -15%;
+    }
+}
+@media screen and (max-height:375px){
+    .banner_desc{
+        display: none;
     }
 }
 /*--    以下為story 品牌故事 區--*/
@@ -304,6 +327,11 @@ header{
         position: absolute;
         width: 45%;
         top:2%;
+    }
+}
+@media screen and (max-height:600px){
+    .story_r {
+        top:0;
     }
 }
 /*--以下為concept 四大品牌堅持 區--*/
