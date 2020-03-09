@@ -8,7 +8,6 @@
                         max-width: 1140px;
                         margin: auto;
                         padding: 0px 15px;
-
                     }
                     
 
@@ -59,15 +58,20 @@
                         letter-spacing: 0.05rem;
                     }
 
-                    @media screen and (min-width: 768px) {
+                    @media screen and (min-width: 769px) {
+
+                        .product_wrapper>.product_container {
+                            padding: 0;
+                        }
                     
                         .product_start {
+                            max-width: 1140px;
                             display: flex;
                             justify-content: space-between;
                         }
 
                         .product_sidemenu_block {
-                            flex-basis: 19%;
+                            width: 19%;
                             padding-top: 40px;
                         }
 
@@ -88,39 +92,26 @@
                     /*-------------商品區塊-----------*/
                     
                     .product_list_block {
-                        flex-basis: 81%;
                         display: flex;
                         flex-direction: column;
                     }
                     
                     .product_area {
-                        flex-basis: 90%;
                         display: flex;
-                        justify-content: space-between;
                         flex-wrap: wrap;
                         flex-grow: 2;
                     }
                     
                     .product_area .product {
-                        flex-basis: calc(100% / 3 - 30px);
-                        margin-bottom: 30px;
+                        width: calc(100% / 2 - 30px);
+                        margin: 0 15px 30px 15px;
                     }
+
                     .product .flex_product {
                         min-width: 160px;
                         height: 100%;
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-between;
-                    }
-
-                    @media screen and (min-width: 411px){
-                        .product_area {
-                            justify-content: space-evenly;
-                        }
-
-                        .product .flex_product {
-                            min-width: 180px;
-                        }
                     }
                     
                     .product .image {
@@ -197,13 +188,13 @@
                     }
 
                     .product_quantity_block .shopping-cart-icon{
-                        background-image: url(../images/shopping-cart.svg);
+                        background-image: url(/images/shopping-cart.svg);
                         height: 30px;
                         width: 30px;
                     }
 
                     .product_quantity_block .shopping-cart-icon:hover{
-                        background-image: url(../images/shopping-cart_green.svg);
+                        background-image: url(/images/shopping-cart_green.svg);
                     }
                     
                     .button_area {
@@ -226,6 +217,15 @@
                     }
 
                     @media screen and (min-width: 769px) {
+
+                        .product_list_block {
+                            width: 81%;
+                        }
+
+                        .product_area .product {
+                            width: 81%;
+                            width: calc(100% / 3 - 30px);
+                        }
 
                         .shopping-cart-icon{
                             display: none;
