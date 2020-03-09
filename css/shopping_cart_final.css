@@ -39,12 +39,17 @@ body{
 
 .content_w81{
     width: 81%;
-    text-align: center;
+    text-align: right;
+    padding-right: 30px;
 }
 
 .content_w60{
     width: 60%;
     line-height: 1.8em;
+}
+
+.pd-name{
+    /* display: block; */
 }
 
 .content_w12{
@@ -61,12 +66,12 @@ body{
     border-bottom: 1px solid #6f6f6f;
     font-weight: bold;
     line-height: 1.5em;
-    padding: 5px;
 }
 
 .content03{
+    display: flex;
     border-bottom: 1px solid #6f6f6f;
-    line-height: 1.5em;
+    line-height: 2em;
     text-align: center;
 }
 
@@ -79,34 +84,26 @@ body{
 }
 
 .content04{
+    display: flex;
     font-weight: bold;
     line-height: 2em;
 }
 
 .cart_container>.cart_block>.content02>.product01{
     display: flex;
-    padding-bottom: 8px;
-    margin-bottom: 8px;
+    padding: 8px 0;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.226);
 }
 
 .cart_container>.cart_block>.content02>.product02{
     display: flex;
-    margin-bottom: 8px;
-    margin-bottom: 8px;
+    padding: 8px 0;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.226);
 }
 
 .cart_container>.cart_block>.content02>.product03{
     display: flex;
-}
-
-.content03{
-    display: flex;
-}
-
-.content04{
-    display: flex;
+    padding: 8px 0;
 }
 
 .cart_info{
@@ -181,12 +178,18 @@ body{
 
     .content_w81{
         width: 82%;
-        text-align: center;
+        text-align: right;
     }
     
     .content_w60{
         width: 60%;
         line-height: 1.8em;
+    }
+
+    .pd-name{
+        padding: 0;
+        display: inline-block;
+        font-size: .8em;
     }
     
     .content_w14{
@@ -206,25 +209,25 @@ body{
         font-size: 0.9em;
     }
 
-    .content02>.product01 span{
+    /* .content02>.product01 span{
         display: none;
-    }
+    } */
 
     .content02>.product02{
         font-size: 0.9em;
     }
 
-    .content02>.product02 span{
+    /* .content02>.product02 span{
         display: none;
-    }
+    } */
 
     .content02>.product03{
         font-size: 0.9em;
     }
 
-    .content02>.product03 span{
+    /* .content02>.product03 span{
         display: none;
-    }
+    } */
 
     .content03{
         font-size: 0.8em;
@@ -248,7 +251,7 @@ body{
     }
 
     .content_w8{
-        width: 10%;
+        width: 15%;
         font-size: 0.9em;
     }
 

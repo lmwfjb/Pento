@@ -131,6 +131,11 @@ body {
     margin: 8px;
 }
 
+.pd-name{
+    display: block;
+    padding: 8px 0 0 8px;
+}
+
 /* .qty-input>.less,
 .qty-input>.more {
     color: #454545;
@@ -169,11 +174,8 @@ body {
     font-weight: 500;
 } */
 .qty-input-c{
-    margin: 8px;
-    margin-top: 20px;
-    width: 40%;
-
-    margin-right: 5%;
+    margin: 20px 0 08px;
+    max-width: 130px;
 }
 .qty-input {
     padding-left: 2% 2%;
@@ -255,13 +257,13 @@ input {
         text-align: center;
     }
     .title-name>.one {
-        width: 40%;
+        width: 35%;
     }
     .title-name>.two {
-        width: 20%;
+        width: 22%;
     }
     .title-name>.three {
-        width: 20%;
+        width: 15%;
     }
     .title-name>.four {
         width: 20%;
@@ -298,6 +300,11 @@ input {
         line-height: 20px;
         text-align: center;
     }
+
+    .pd-name{
+        display: inline-block;
+    }
+
     /* .pic-word-box>.word>.qty-input {
         margin: 0;
         width: 20%;
