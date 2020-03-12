@@ -65,7 +65,7 @@ body {
     max-width: 220px;
     width: 100%;
     margin: auto;
-    font-size: 0.8rem;
+    font-size: .08rem;
     letter-spacing: .03rem;
     justify-content: space-between;
     color: #808080;
@@ -436,12 +436,10 @@ input {
 
 .item-name>p,
 .item-price>p {
-    font-size: 0.9rem;
     text-align: right;
 }
 
 .item-name {
-    font-size: 0.9rem;
     width: 65%;
     padding-right: 10%x;
     /* background-color: rgb(248, 123, 123); */
@@ -461,7 +459,7 @@ input {
 }
 
 .item-price span {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 @media screen and (min-width: 768px) {
