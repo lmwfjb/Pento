@@ -157,6 +157,7 @@
                         justify-content: space-between;
                         margin-left: 0;
                         overflow: hidden;
+                        line-height: 30px;
                     }
                     .qty-input .less, .qty-input .more {
                         cursor: pointer;
