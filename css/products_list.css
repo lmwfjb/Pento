@@ -197,7 +197,7 @@
                     }
 
                     .product_quantity_block .shopping-cart-icon:hover{
-                        background-image: url(/images/shopping-cart_green.svg);
+                        background-image: url(../images/shopping-cart_green.svg);
                     }
                     
                     .button_area {
