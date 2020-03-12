@@ -191,7 +191,7 @@
                     }
 
                     .product_quantity_block .shopping-cart-icon{
-                        background-image: url(/images/shopping-cart.svg);
+                        background-image: url(../images/shopping-cart.svg);
                         height: 30px;
                         width: 30px;
                     }
