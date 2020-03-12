@@ -131,11 +131,6 @@ body {
     margin: 8px;
 }
 
-.pd-name{
-    display: block;
-    padding: 8px 0 0 8px;
-}
-
 /* .qty-input>.less,
 .qty-input>.more {
     color: #454545;
@@ -174,8 +169,11 @@ body {
     font-weight: 500;
 } */
 .qty-input-c{
-    margin: 20px 0 08px;
-    max-width: 130px;
+    margin: 8px;
+    margin-top: 20px;
+    width: 40%;
+
+    margin-right: 5%;
 }
 .qty-input {
     padding-left: 2% 2%;
@@ -204,11 +202,14 @@ input {
     border: 0px solid;
     border-left: 1px solid #353535;
     border-right: 1px solid #353535;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     outline: none;
     background-color: #FFFBED;
 }
+
+
+
 
 
 
@@ -254,13 +255,13 @@ input {
         text-align: center;
     }
     .title-name>.one {
-        width: 35%;
+        width: 40%;
     }
     .title-name>.two {
-        width: 22%;
+        width: 20%;
     }
     .title-name>.three {
-        width: 15%;
+        width: 20%;
     }
     .title-name>.four {
         width: 20%;
@@ -297,11 +298,6 @@ input {
         line-height: 20px;
         text-align: center;
     }
-
-    .pd-name{
-        display: inline-block;
-    }
-
     /* .pic-word-box>.word>.qty-input {
         margin: 0;
         width: 20%;
