@@ -442,12 +442,14 @@ input {
 
 .item-name {
     width: 65%;
+    height: 100px;
     padding-right: 10%x;
     /* background-color: rgb(248, 123, 123); */
 }
 
 .item-price {
     width: 35%;
+    height: 100px;
     /* background-color: rgb(117, 238, 123); */
 }
 
