@@ -65,7 +65,7 @@ body {
     max-width: 220px;
     width: 100%;
     margin: auto;
-    font-size: .08rem;
+    font-size: .8rem;
     letter-spacing: .03rem;
     justify-content: space-between;
     color: #808080;
@@ -438,11 +438,13 @@ input {
 .item-name {
     width: 65%;
     padding-right: 10%x;
+    font-size: 0.9rem;
     /* background-color: rgb(248, 123, 123); */
 }
 
 .item-price {
     width: 35%;
+    font-size: 0.9rem;
     /* background-color: rgb(117, 238, 123); */
 }
 
