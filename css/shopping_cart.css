@@ -437,23 +437,18 @@ input {
 .item-name>p,
 .item-price>p {
     text-align: right;
+    margin: 2% 0;
 }
 
 .item-name {
     width: 65%;
     padding-right: 10%x;
     /* background-color: rgb(248, 123, 123); */
-    display: flex;
-    flex-direction: column;
-    height: auto;
 }
 
 .item-price {
     width: 35%;
     /* background-color: rgb(117, 238, 123); */
-    display: flex;
-    flex-direction: column;
-    height: auto;
 }
 
 .item-name>.oth-color {
