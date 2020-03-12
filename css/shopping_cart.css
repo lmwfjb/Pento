@@ -170,7 +170,7 @@ body {
     color: #454545;
     font-weight: 500;
 } */
-.qty-input-c{
+/* .qty-input-c{
     margin: 8px;
     margin-top: 20px;
     width: 40%;
@@ -188,7 +188,7 @@ body {
     margin-left: 5%;
     overflow: hidden;
 }
-.qty-input div {
+.qty-input .less, .qty-input .more {
     cursor: pointer;
     font-family: serif;
     height: 25px;
@@ -199,7 +199,7 @@ body {
     width: 20%;
     background-color: #FFFBED;
 }                  
-input {
+.amount {
     width: 50%;
     border: 0px solid;
     border-left: 1px solid #353535;
@@ -208,9 +208,11 @@ input {
     text-align: center;
     outline: none;
     background-color: #FFFBED;
+} */
+
+.qty-input{
+    width: 40%;
 }
-
-
 
 
 
@@ -326,7 +328,7 @@ input {
         width: 18%;
         margin-right: 5%;
     }
-    .qty-input {
+    /* .qty-input {
         padding-left: 2% 2%;
         border: 1px solid #353535;
         border-radius: 20px;
@@ -337,7 +339,7 @@ input {
         margin-left: 0;
         overflow: hidden;
     }
-    .qty-input div {
+    .qty-input .less {
         cursor: pointer;
         font-family: serif;
         height: 25px;
@@ -347,8 +349,10 @@ input {
         transition: all 150ms ease-out;
         width: 20%;
         background-color: #FFFBED;
-    }                  
-    input {
+    }  */
+    
+    
+    /* input {
         width: 50%;
         border: 0px solid;
         border-left: 1px solid #353535;
@@ -357,6 +361,9 @@ input {
         text-align: center;
         outline: none;
         background-color: #FFFBED;
+    } */
+    .qty-input{
+        width: 100%;
     }
 
 }

@@ -5,10 +5,10 @@ let price3 = parseInt($(".price3").text());
 let p_price = parseInt($(".p_price").text());
 let t_price = parseInt($(".t_price").text());
 
-$(".qty-input div").click(function () {
-    let input_value1 = parseInt($(".input1").val());
-    let input_value2 = parseInt($(".input2").val());
-    let input_value3 = parseInt($(".input3").val());
+$(".qty-input .less, .qty-input .more").click(function () {
+    let input_value1 = parseInt($(".input1").text());
+    let input_value2 = parseInt($(".input2").text());
+    let input_value3 = parseInt($(".input3").text());
 
     let fprice1 = parseInt($(".fprice1").text());
     let fprice2 = parseInt($(".fprice2").text());
