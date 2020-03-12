@@ -438,6 +438,7 @@ input {
 .item-price>p {
     text-align: right;
     margin: 2% 0;
+    font-size: 0.9rem;
 }
 
 .item-name {
