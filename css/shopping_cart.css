@@ -435,31 +435,29 @@ input {
 .item-name>p,
 .item-price>p {
     text-align: right;
+    padding-top: 0.5rem;
+    line-height: 150%;
+    font-size: 0.9rem;
 }
-
+.item-name>p{
+    padding-top: 0.6rem;
+}
 .item-name {
     width: 65%;
     padding-right: 10%x;
-    font-size: 0.9rem;
     /* background-color: rgb(248, 123, 123); */
 }
 
 .item-price {
     width: 35%;
-    font-size: 0.9rem;
     /* background-color: rgb(117, 238, 123); */
 }
 
 .item-name>.oth-color {
     color: #aaa9a9;
 }
-
-.item-name p {
-    padding-top: 2px;
-}
-
 .item-price span {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 @media screen and (min-width: 768px) {
