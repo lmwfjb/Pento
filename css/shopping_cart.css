@@ -71,7 +71,9 @@ body {
     color: #808080;
     margin-bottom: 30px;
 }
-
+.status-word p{
+    font-size: .8rem;
+}
 .order-box>.title-name {
     display: none;
 }
