@@ -127,6 +127,11 @@ body {
     padding-right: 20px;
 }
 
+.word .pd-name{
+    display: inline-block;
+    padding: 8px 0 0 8px;
+}
+
 .pic-word-box>.word>.two {
     font-size: .8rem;
     letter-spacing: .03rem;
@@ -210,10 +215,22 @@ body {
     background-color: #FFFBED;
 } */
 
-.qty-input{
-    width: 40%;
+.qty-input-c{
+    margin-top: 15px;
 }
 
+.qty-input{
+    width: 60%;
+    height: 28px;
+}
+
+.qty-input .less, .qty-input .qty_amount, .qty-input .more{
+    line-height: 28px;
+}
+
+.qty-input .qty_amount{
+    font-size: 1.1rem;
+}
 
 
 
@@ -294,12 +311,19 @@ body {
         padding: 0;
         width: 26%;
         line-height: 20px;
+        font-size: 1rem;
     }
+
+    .pic-word-box>.word .pd-name {
+        padding: 0;
+    }
+
     .pic-word-box>.word>.two {
         margin: 0;
         width: 20%;
         margin-right: 5%;
         line-height: 20px;
+        font-size: 1rem;
         text-align: center;
     }
     /* .pic-word-box>.word>.qty-input {
@@ -311,13 +335,13 @@ body {
         display: block;
         width: 20%;
         line-height: 20px;
-        font-size: .8rem;
+        font-size: 1rem;
         letter-spacing: .03rem;
         text-align: center;
     }
     .pic-word-box>.word>.five>i {
         top: 3%;
-        right: -5%;
+        right: -4%;
         line-height: 20px;
         text-align: center;
     }
@@ -387,7 +411,7 @@ body {
 .bp-btn-box {
     display: flex;
     justify-content: flex-end;
-    padding-top: 20px;
+    padding: 20px 0 50px 0;
 }
 
 .buy-btn,
@@ -397,7 +421,7 @@ body {
 }
 
 .pay-btn {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .buy-btn>a,

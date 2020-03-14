@@ -219,6 +219,15 @@
                         border-radius: 50px;
                     }
 
+                    .back_button:hover{
+                        border: 1px solid #007f4e;
+                        background: none;
+                        box-sizing: border-box;
+                        color: #007F4E;
+                    }
+
+
+
                     @media screen and (min-width: 769px) {
 
                         .product_list_block {

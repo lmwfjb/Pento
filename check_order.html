@@ -108,48 +108,59 @@
             <main class="info-sec">
 
                 <aside class="aside">
-                    <a href="#" class="active" id="user-info-link">個人資訊</a>
-                    <a href="user_info.html" id="check-order-link">訂單查詢</a>
+                    <a href="user_info.html" id="user-info-link">個人資訊</a>
+                    <a href="javascript:void(0)" class="active" id="check-order-link">訂單查詢</a>
                 </aside>
 
                 <section class="all_order">
                     <div class="product_list">
-                        <ul>
-                            <li class="bottom_line">
-                                <p class="img_and_text">商品資料</p>
-                                <p>價格</p>
-                                <p>數量</p>
-                            </li>
-                            <li>
-                                <p class="img_and_text">《鮮食調理包》鮮蝦番茄鮭魚口味</p>
-                                <p>NT.125</p>
-                                <p>1</p>
-                            </li>
-                            <li>
-                                <p class="img_and_text">《鮮食調理包-超值組合》</p>
-                                <p>NT.666</p>
-                                <p>1</p>
-                            </li>
-                            <li class="bottom_line">
-                                <p class="img_and_text">《天然手作肉乾》牛肉</p>
-                                <p>NT.160</p>
-                                <p>1</p>
-                            </li>
-                        </ul>
-                        <ul class="total">
-                            <li>
-                                <p>小計</p>
-                                <p>NT.951</p>
-                            </li>
-                            <li>
-                                <p>運費</p>
-                                <p>NT.160</p>
-                            </li>
-                            <li>
-                                <p>總計</p>
-                                <p>NT.1111</p>
-                            </li>
-                        </ul>
+                        <!-- <ul> -->
+
+                        <div class="img_and_text">
+                            <p class="fir">商品資料</p>
+                            <p class="sec">價格</p>
+                            <p class="thr">數量</p>
+                            <p class="four">小計</p>
+                        </div>
+
+                        <hr class="bottom_line">
+
+                        <div class="img_and_text">
+                            <p class="fir fir1">《鮮食調理包》<span>番茄鮮蝦鮭魚(犬)</span></p>
+                            <p class="sec">NT$125</p>
+                            <p class="thr">3</p>
+                            <p class="four">NT$375</p>
+                        </div>
+                        <div class="img_and_text">
+                            <p class="fir fir1">《鮮食調理包》<span>穀飼南瓜鮮牛(貓)</span></p>
+                            <p class="sec">NT＄125</p>
+                            <p class="thr">1</p>
+                            <p class="four">NT$125</p>
+                        </div>
+
+                        <div class="img_and_text">
+                            <p class="fir fir1">《天然手作肉乾》<span>牛肉口味(12入)</span></p>
+                            <p class="sec">NT$360</p>
+                            <p class="thr">3</p>
+                            <p class="four">NT$1080</p>
+                        </div>
+                        <!-- </ul> -->
+
+                        <hr class="bottom_line">
+
+                        <div class="product-total">
+                            <div class="price-box">
+                                <p>總計&nbsp;&nbsp;</p>
+                                <p>運費&nbsp;&nbsp;</p>
+                                <p>本訂單總金額&nbsp;&nbsp;</p>
+                            </div>
+                            <div class="price-box">
+                                <p>NT$1580</p>
+                                <p>NT$100</p>
+                                <p>NT$1680</p>
+                            </div>
+
+                        </div>
                     </div>
 
 
@@ -172,19 +183,19 @@
                         <ul>
                             <p class="text_bold">收件人資訊</p>
                             <li>
-                                <p>收件人</p>
-                                <p>王小華</p>
+                                <p>收件者</p>
+                                <p>王伯原</p>
                             </li>
                             <li>
                                 <p>收件地址</p>
-                                <p>台北市中正區xxx路xx號</p>
+                                <p>407台中市西屯區市政北七路426號</p>
                             </li>
                             <li>
-                                <p>收件人電話</p>
-                                <p>0912-345678</p>
+                                <p>連絡電話</p>
+                                <p>0921456789</p>
                             </li>
                             <li>
-                                <p>運送方式</p>
+                                <p>配送方式</p>
                                 <p>低溫宅配</p>
                             </li>
                             <li class="another_bottom_line">
@@ -196,7 +207,7 @@
                             <p class="text_bold">付款資訊</p>
                             <li>
                                 <p>付款方式</p>
-                                <p>貨到付款</p>
+                                <p>宅配貨到付款</p>
                             </li>
                             <li>
                                 <p>付款狀態</p>
@@ -204,7 +215,11 @@
                             </li>
                         </ul>
                     </div>
-                    <button><a href="user_info.html#check-order-link">回列表</a></button>
+
+                    <div class="back-box">
+                        <div class="back-btn"><a href="user_info.html#check-order-link">回列表</a></div>
+                    </div>
+
                 </section>
 
             </main>

@@ -125,24 +125,26 @@ body{
     width: 25%;
 }
 
+.bottom_button{
+    width: 90%;
+}
+
 .bottom_button>.yellow_line{
     display: flex;
     justify-content: flex-end;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    padding: 20px 0 50px 0;
 }
 
 .bottom_button>.yellow_line>.button01{
     width: 100px;
     height: 40px;
-/*    background-color: white;*/
     border: 1px solid #007f4e;
     border-radius: 50px;
     text-align: center;
     line-height: 2.5em;
-    margin-right: 3%;
+    /* margin-right: 3%; */
 }
 
 .bottom_button>.yellow_line>.button01>a{
@@ -153,13 +155,14 @@ body{
 }
 
 .bottom_button>.yellow_line>.button02{
-    width: 180px;
+    width: 150px;
     height: 40px;
     background-color: #007f4e;
     border: 1px solid #007f4e;
     line-height: 2.5em;
     border-radius: 50px;
     text-align: center;
+    margin-left: 10px;
 }
 
 .bottom_button>.yellow_line>.button02>a{
@@ -278,11 +281,15 @@ body{
         line-height: 2.8em;
     }
 
+    .bottom_button{
+        width: 100%;
+    }
+
     .bottom_button>.yellow_line>.button01{
-        width: 40%;
+        /* width: 40%; */
     }
 
     .bottom_button>.yellow_line>.button02{
-        width: 60%;
+        /* width: 60%; */
     }
 }
